@@ -1,0 +1,158 @@
+---
+title: Ask the Room
+description:
+  Two rounds of estimates from the same people under two different protocols,
+  and a national polling failure that has the same shape as the second round
+week: 8
+date: 2027-04-19
+tags:
+  - aggregation
+  - independence
+spec:
+  - you can say what the room’s two aggregates did, and why they differed
+  - you can name what the second round’s estimates had in common
+  - you can point to one estimate of your own whose inputs were shared with everyone else’s
+links:
+  - label: BITRE — Airport traffic data, monthly passenger movements at the top twenty Australian airports
+    url: https://www.bitre.gov.au/publications/ongoing/airport_traffic_data
+  - label: AMSRO and the Statistical Society of Australia — Inquiry into the Performance of the Opinion Polls at the 2019 Australian Federal Election (October 2020)
+    url: https://dataandinsights.com.au/wp-content/uploads/2020/11/Inquiry_into_the_Performance_of_the_Opinion_Polls_at_the_2019_Australian_Federal-Election-Final_report.pdf
+---
+
+Today the room is the dataset. Two rounds, written not spoken, and no phones
+until the reveal.
+
+## Protocol
+
+Both quantities are published monthly by the Bureau of Infrastructure and
+Transport Research Economics. Both are settled facts sitting in a spreadsheet;
+neither is a prediction, and nothing today asks anyone to guess at the future.
+The only thing that varies between the rounds is what you are given to work
+from.
+
+**Round A.** Estimate the total number of passengers through **Hobart Airport in
+August 2025**. You get the question and nothing else. Write your figure on a
+slip, fold it, hand it in. No discussion, no comparing, no adjusting after you
+have written.
+
+**Round B.** Estimate the total number of passengers through **Gold Coast
+Airport in August 2025**. Everyone is given the same starting point, and it is a
+real published figure from the same BITRE series:
+
+> Gold Coast Airport, August 2021: **12,485** passengers.
+
+Reason from it however you like. Same rules: written, folded, handed in, no
+conferring.
+
+Collect both rounds before anybody says anything.
+
+## The reveal
+
+Truths, from the BITRE workbook:
+
+- **Hobart, August 2025 — 207,990 passengers.**
+- **Gold Coast, August 2025 — 505,540 passengers.**
+
+Put every Round A slip on the board and find the middle. Do the same for Round
+B. Two aggregates, two spreads, computed in front of everyone.
+
+Then look at the shape of each round, not just its accuracy:
+
+- **Where did each aggregate land** relative to the truth?
+- **How wide was each round's spread?** Round B is normally the tighter of the
+  two. Note that before drawing any comfort from it.
+- **Which direction were Round B's misses?** Not scattered, in all likelihood.
+  All to one side.
+
+## What went wrong in Round B, and what did not
+
+Nobody was lied to. 12,485 is exactly what BITRE published for Gold Coast in
+August 2021. It is a real number from a reliable agency about the correct
+airport in the correct month of the year.
+
+It is also the wrong number to reason from, for a reason that is obvious once
+somebody says it and easy to miss when you are working: August 2021 fell in a
+period of domestic border closures. The Gold Coast handled around twelve
+thousand passengers that month and around half a million four years later — a
+factor of roughly forty. Anybody who took the reference seriously and scaled it
+by a plausible-sounding recovery multiple landed far short.
+
+Some of you will have spotted the problem and adjusted. Ask, by show of hands,
+how many did — and then look at where those estimates landed. Adjusting from a
+bad base usually still leaves you low, because the base sets the scale you are
+adjusting from.
+
+That is the mechanism worth taking away. **Round B's estimates were not less
+careful than Round A's.** Everyone reasoned independently, honestly, and mostly
+competently. They shared one input, and the error in that input passed straight
+through every chain into every answer. Averaging removed the parts of the error
+that differed between you. It could not touch the part you all had in common,
+and nothing about having more people in the room would have helped.
+
+Meanwhile the tight spread said *agreement*, and agreement reads as confidence.
+The room was most united at the moment it was most wrong.
+
+## The same shape, at national scale
+
+In May 2019 every published poll had Labor winning the Australian federal
+election. The Coalition won. An inquiry was commissioned by AMSRO and the
+Statistical Society of Australia; its report came out in October 2020. Its
+finding:
+
+> "The performance of the national polls in 2019 met the independent criteria of
+> a 'polling failure' not just a 'polling miss'. The polls: (1)
+> significantly—statistically—erred in their estimate of the vote; (2) erred in
+> the same direction and at a similar level; and (3) the source of error was in
+> the polls themselves rather than a result of a last-minute shift among
+> voters."
+
+This was not a run of bad luck by an unreliable industry. The same report:
+
+> "In the four elections preceding the 2019 election – 2007, 2010, 2013, and
+> 2016 – there was a 96% success rate (25 correct calls out of 26 polls)."
+
+The obvious suspicion is that the pollsters copied each other. The panel looked
+and could not establish it:
+
+> "While the Panel found no direct evidence of herding, this cannot be ruled
+> out"
+
+> "In the absence of any direct evidence of herding, the most likely explanation
+> is a systematic skew in the polls coupled with a confirmation bias."
+
+The skew:
+
+> "while pollsters differ they share a common difficulty in struggling to
+> establish contact with and gain the cooperation of a representative sample of
+> voters."
+
+> "the kinds of people who are willing to participate in polls skew towards the
+> more highly educated/more engaged in politics"
+
+Separate companies. Separate samples. Separate methods. One difficulty they all
+had, which pushed all of them the same way — and, because the results agreed,
+looked from outside like several independent confirmations of the same finding.
+
+Read that against your Round B slips. The scale is different and the structure
+is identical.
+
+## Twenty minutes on your own work
+
+In small groups, go back through the estimates you have made this semester: the
+week 2 chain, the week 3 ledger, the week 4 ranges, the bridge from week 5.
+
+Find one where your inputs were not yours alone. The same lecture, the same
+dataset, the same way of breaking a problem into parts that week 2 taught all of
+you, the same starting figure everybody in the room happened to know. Name it.
+
+Then say what you would have to do to get a second estimate that did not share
+it. This is usually harder than it sounds, and noticing that it is hard is the
+point.
+
+## Leaving
+
+Nothing is due. Keep the week 4 sheet going.
+
+One thing to carry into the last stage: for the rest of the semester, when a set
+of estimates agrees, the first question is no longer whether they are right. It
+is what they have in common.
