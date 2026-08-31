@@ -82,6 +82,13 @@ would make a stronger deck.
    and that they resolve. The 100%-weight total is already covered by the
    existing `course-structure.test.ts` check.
 
+7. **Cross-week and cross-assessment dependencies must be verified, not
+   assumed.** Before a later week or assessment is designed to consume an
+   artifact from an earlier week --- a range, a ledger, a retained record ---
+   confirm the artifact actually exists in the implemented page, by citing the
+   line. A planning note that an artifact exists is not evidence that it does.
+   *Verified by citation at design time, not by a test.*
+
 None of the above may be replaced by a keyword check or a proxy metric.
 Additional frontmatter fields are permitted by the schemas, but a field
 invented to make quality machine-testable --- a `form` string, an `anchor`
