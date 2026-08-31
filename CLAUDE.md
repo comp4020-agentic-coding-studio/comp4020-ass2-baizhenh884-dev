@@ -26,6 +26,69 @@ harness is assessed. This file and the sensors you wire into `check` carry
 across the course. `spec/README.md` draws the line between what's fixed
 platform and what's yours to build and test.
 
+## Course facts
+
+**Back of the Envelope** (`SLOP2896`). Central question: *"How wrong can you
+be, and still be useful?"* Thesis: *"This course teaches quantitative judgment
+by treating the chain of assumptions and uncertainty --- not numerical
+precision alone --- as the real deliverable."*
+
+Arc: Weeks 1--4 method, Weeks 5--8 evidence and other people, Weeks 9--12
+consequence and accountability. Assessments: Calibration Diary (45%), Client
+Estimate & Estimate Court (55%). Week 1 is currently the preferred
+lecture-deck week --- open to revision if content review shows another week
+would make a stronger deck.
+
+## Back of the Envelope: guardrails
+
+1. **Every week earns its place in the argument.** Each session must make a
+   substantive, recognisable contribution to the central question, in its own
+   language --- not restate it verbatim, not merely gesture at it. *Human
+   review.*
+
+2. **Method discipline across the semester.** No week may drift into
+   Statistics 101 as its method, judged against the course's plain-language
+   approach as a whole --- not by keyword. Week 2 is the only week whose core
+   mechanic is a from-scratch Fermi/decomposition exercise. Every later week
+   must introduce a genuinely different source of uncertainty, evidence,
+   disagreement, stakes, time, or accountability. *Human review.*
+
+3. **Assumptions and uncertainty stay visible, without a fixed template.**
+   Every estimation activity (week content and both assessments) must make its
+   assumptions visible and individually justified; the form --- list, prose,
+   table --- is each week's choice. *Human review.*
+
+4. **Concrete anchors, not generic filler.** Every week must rest on a
+   concrete, checkable real-world anchor. A simulation or role-play --- the
+   Week 7 negotiation, the Week 11 Estimate Court --- is fine when it is
+   explicitly derived from or constrained by a real case, dataset, document,
+   event, or realistic external constraint. What is not fine is an invented
+   generic scenario that could be swapped into any other week without loss.
+   *Human review* --- whether an anchor is substantive is a judgment, and no
+   field's presence would prove it, so no check is proposed.
+
+5. **Periodically compare weeks side by side.** Before treating a batch of
+   weeks as done, open two contrast sets and confirm each differs in purpose
+   and activity, not just terminology: Weeks 1, 6 and 11 for broad semester
+   progression, and Weeks 5, 6 and 8, which are the weeks most at risk of
+   blurring into "reason about numbers other people produced". *Human review.*
+
+6. **Assessments visibly grow from specific weeks.** Each assessment must
+   declare `related` references to the teaching weeks it draws on --- the
+   field ships with the content schema and drives the site's graph edges ---
+   and must read as growing from those weeks rather than as a generic
+   assignment brief. *Human review* for whether the alignment is substantive;
+   *possible future spec check* that each assessment declares such references
+   and that they resolve. The 100%-weight total is already covered by the
+   existing `course-structure.test.ts` check.
+
+None of the above may be replaced by a keyword check or a proxy metric.
+Additional frontmatter fields are permitted by the schemas, but a field
+invented to make quality machine-testable --- a `form` string, an `anchor`
+flag --- proves only that someone typed it, so don't add one. Whether a week
+sounds generic, whether an assumption is defensible, and whether two weeks
+genuinely differ are judgments for review, not tests.
+
 ## Harness maintenance protocol
 
 When we hit a repeated correction, a failed test, an incorrect assumption, an
@@ -55,5 +118,5 @@ applies --- rather than letting it silently persist. Once a change is
 approved, commit it on its own, separate from unrelated work, so it can be
 cited individually in `PROCESS.md`.
 
-There are no project-specific contracts yet for this deliverable --- they'll be
-added here as they're approved.
+The project-specific contracts for this deliverable are the course facts and
+the six guardrails above.
