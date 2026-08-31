@@ -1,48 +1,106 @@
 ---
-title: Opening lecture
-description: The placeholder deck — replace it with a real deck for your course
----
-
-# Opening lecture
-
-{/* STARTER_CONTENT: replace this deck, then remove this comment. */}
-
-Replace this deck. It is here to show that slides are part of the site, built
-from the same markdown as everything else.
-
----
-
-## Slides are markdown
-
-A `---` starts a new slide. Everything else is ordinary markdown: headings,
-lists, links, tables, images, fenced code.
-
-- one idea per slide
-- the fewest words that carry it
-- the deck is a performance artefact, so it can say things a page wouldn't
-
+title: The digits are a claim you did not make
+description:
+  Week 1 of Back of the Envelope — precision, accuracy, uncertainty and
+  sufficiency, told through two published ABS figures
 ---
 
 {/* _class: impact */}
 
-# A slide class
+# How wrong can you be, and still be useful?
 
-`{/* _class: impact */}` fills the slide with the brand colour. `quote`,
-`banner` and `centered` are the others the theme styles.
+Back of the Envelope · Week 1
 
 ---
 
-## What else is here
+# 25,417,978
 
-```sh
-pnpm dev
-pnpm check
+Eight digits. Count them.
+
+*The 2021 Census count of Australian residents present on Census night ---
+ABS, 2021 Census overcount and undercount.*
+
+```notes
+The count includes people imputed for non-responding dwellings. Don't explain
+the number yet --- let the room look at the resolution first.
 ```
 
-The second command proves the deck compiles with the rest of the site. Use the
-first to inspect every slide at the desktop and phone marking viewports; slide
-fit and legibility are visual judgements.
+---
 
-The [astromotion](https://github.com/ANUcybernetics/astromotion) README has the
-rest of the syntax: speaker notes, backgrounds, QR codes, fragments, and
-components hydrated per slide.
+{/* _class: quote */}
+
+> "These projections are not predictions or forecasts."
+
+The ABS, on the page that also shows you a population clock advancing person by
+person.
+
+[abs.gov.au → population clock and pyramid](https://www.abs.gov.au/statistics/people/population/population-clock-pyramid)
+
+---
+
+## Four questions, one number
+
+- **Precision** — how finely it is written
+- **Accuracy** — how close it sits to the thing
+- **Uncertainty** — the spread it is really known within
+- **Sufficiency** — whether it is good enough for *this* decision
+
+Only the last one is yours to settle. Settle it first.
+
+---
+
+## What the count missed
+
+- Census count — 25,417,978
+- PES estimate of who should have been counted — 25,608,022
+- Net undercount — **190,044 persons, or 0.7%**
+
+The lowest net undercount recorded for an Australian census. It was 1.0% in
+2016.
+
+Better than you guessed, probably.
+
+---
+
+# 17.4%
+
+2021 Census net undercount for Aboriginal and Torres Strait Islander people.
+
+```notes
+The same census. The same methodology.
+
+The PES estimated 983,257 people should have been counted against a Census
+count of 812,505 --- a shortfall of 170,752 persons. The 2016 figure was 17.5%.
+
+Take this slowly, and don't play it as a reveal. The point is not that
+statistics are unreliable; it is that a count's coverage differs by population,
+and every process that uses the count inherits that difference.
+```
+
+---
+
+## Which population is the decision about?
+
+Two teaching exercises --- not descriptions of any real allocation process:
+
+**A.** A national planning task sized in millions: do a few tenths of a percent
+change the decision?
+
+**B.** A service for a community of a few thousand, counted with substantially
+higher uncertainty: does the same relative error change it?
+
+```notes
+The digits look identical either way --- that is the whole point. Push them to
+say what precision each decision would actually require.
+```
+
+---
+
+{/* _class: centered */}
+
+## Before you leave
+
+> This number is precise enough to decide ______, and not precise enough to
+> decide ______, because ______.
+
+And the habit that starts today: **commit to a range before you look it up.**
