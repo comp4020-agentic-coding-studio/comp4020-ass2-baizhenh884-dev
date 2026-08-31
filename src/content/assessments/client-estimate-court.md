@@ -29,6 +29,8 @@ links:
 related:
   - sessions/05-borrowed-numbers
   - sessions/07-the-number-someone-wants
+  - sessions/09-who-carries-the-cost
+  - sessions/11-estimate-court
 ---
 
 Nothing about this target is in the future. You are not forecasting anything —

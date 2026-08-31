@@ -27,6 +27,8 @@ spec:
   - the counter-case genuinely engages entries that do not fit the claimed pattern, and the forward commitment is checkable
 related:
   - sessions/04-a-number-with-a-shape
+  - sessions/10-a-number-about-tomorrow
+  - sessions/12-your-own-track-record
 ---
 
 This is not a record of how often you were right. It is a record of how firmly
