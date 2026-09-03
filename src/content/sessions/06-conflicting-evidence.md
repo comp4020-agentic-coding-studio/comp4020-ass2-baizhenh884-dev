@@ -44,8 +44,9 @@ A count of people, produced from a count of bedrooms.
 **Australian Institute of Health and Welfare** — *Specialist Homelessness
 Services annual report*. The AIHW records almost 289,000 clients assisted by
 specialist homelessness agencies across the **financial year 2024–25**, up from
-236,000 in 2011–12. That total covers two different situations, and the report
-separates them:
+236,000 in 2011–12. Among the subset of clients whose housing status was known
+at the beginning of their first support period — not the full 289,000 — the
+report splits them:
 
 > "More clients were at risk of homelessness (51% or 139,000), than experiencing
 > homelessness (49% or 133,000)."

@@ -46,6 +46,12 @@ conferring.
 
 Collect both rounds before anybody says anything.
 
+**Diary note.** Before you fold and hand in each slip, copy that estimate into
+your Calibration Diary as a full entry: a low bound and a high bound around
+your figure, your confidence in plain words, a miss-line, and the BITRE
+airport traffic series named as your resolution source. This is the Diary's
+instruction, not a change to Round A or Round B themselves.
+
 ## The reveal
 
 Truths, from the BITRE workbook:
@@ -122,9 +128,9 @@ and could not establish it:
 
 The skew:
 
-> "while pollsters differ they share a common difficulty in struggling to
-> establish contact with and gain the cooperation of a representative sample of
-> voters."
+> "even though the methods used by the pollsters differ they share a common
+> difficulty in struggling to establish contact with and gain the cooperation
+> of a representative sample of voters."
 
 > "the kinds of people who are willing to participate in polls skew towards the
 > more highly educated/more engaged in politics"

@@ -19,9 +19,10 @@ links:
 
 You will not estimate anything today. Bring last week's chain anyway.
 
-Last week you built a number and circled the link you least wanted to defend.
-That circle was a hunch. This week we turn it into a question you can actually
-answer, by practising on an estimate nobody in this room made.
+The link you circled last week — the one you least wanted to defend — is
+where today starts. That circle was a hunch. This week we turn it into a
+question you can actually answer, by practising on an estimate nobody in this
+room made.
 
 ## The case
 
@@ -32,7 +33,8 @@ Resist the arithmetic. Do not divide one by the other.
 
 Those two figures are separated by different currencies --- Australia moved to
 decimal currency in 1966 --- by sixteen years of inflation, by a client decision
-to change the interiors from two theatres to four, by Jørn Utzon's departure in
+to change the interiors substantially, expanding the number of performance
+spaces, by Jørn Utzon's departure in
 1966 and a different design for the interiors that followed, and by a great deal
 else besides. A ratio between them would be a number with no referent: precise,
 impressive, and about nothing. If week 1 landed, that sentence should already

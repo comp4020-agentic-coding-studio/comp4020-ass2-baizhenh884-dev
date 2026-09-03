@@ -55,23 +55,27 @@ you.
 
 ## Where the entries come from
 
-Seven are supplied directly by the course, and nothing else may stand in for
+Four are supplied directly by the course, and nothing else may stand in for
 them:
 
 - the Week 4 rainfall commit-then-look (1 entry);
-- Week 4's "translate three of your own" exercise (3 entries);
-- Week 8's two round estimates — copy both figures, with your stated
-  confidence, into this Diary before you fold your slip and hand it in;
-  nothing about the Week 8 session itself changes, this instruction belongs
-  to the Diary (2 entries);
+- Week 8's two round estimates — recorded as full entries (low bound, high
+  bound, confidence, miss-line, and the BITRE airport traffic series as
+  resolution source) before you fold each slip and hand it in; nothing about
+  the Week 8 session itself changes, this instruction belongs to the Diary
+  (2 entries);
 - Week 10's single sealed forecast, committed in that session and opened only
   in Week 12 (1 entry).
 
-The remaining eight are yours: made on your own initiative, spread across
+The remaining eleven are yours: made on your own initiative, spread across
 Weeks 4 to 12, on any quantity you like, provided you can name the source that
 will resolve it before you commit to a range.
 
 **Fifteen entries minimum. At least twelve resolved by the time you submit.**
+The four supplied entries resolve on the course's own timetable, so meeting
+the twelve-resolved minimum also depends on your own self-initiated entries:
+at least eight of your eleven need to resolve before the due date, not just
+be written down by then.
 
 ## What Week 12 adds
 
@@ -111,7 +115,7 @@ leaving them out.
 
 **How often you were right.** A well-calibrated 75% confidence should miss
 about a quarter of the time — a diary with no misses in it is not a strong
-diary, it is a suspiciously narrow one. There is no Brier score, no
+diary, it is a suspiciously wide one. There is no Brier score, no
 calibration curve and no statistical formula anywhere in this brief. The
 audit is a count you can do by hand, and everything that follows it is
 written reflection, not computation.

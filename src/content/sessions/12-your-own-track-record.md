@@ -30,7 +30,7 @@ Start with the entry you cannot revise. Take out your week 10 forecast — the
 sealed low bound, high bound, confidence, and miss-line for Canberra Airport's
 daily maximum on 13 May 2027 — and check it, for the first time, against the
 Bureau of Meteorology's Daily Weather Observations for Canberra, ACT, the
-exact product you named as your resolution source five weeks ago. Record
+exact product you named as your resolution source two weeks ago. Record
 what it shows and whether your range held it, honestly, before you touch
 anything else in the diary. This is the one entry in your record you were
 structurally prevented from adjusting in hindsight, which is exactly what
@@ -38,8 +38,8 @@ makes it worth resolving first, while that discipline is freshest in mind.
 
 ## Count what you have
 
-Retrieve every other entry — the four from week 4, the two copied out of
-week 8's slips, and the eight you built on your own initiative — and mark
+Retrieve every other entry — the one from week 4, the two copied out of
+week 8's slips, and the eleven you built on your own initiative — and mark
 each resolved one hit or miss. No formula does this for you. You are doing
 by hand exactly what the Bureau does to its own forecasts when it checks
 whether a stated 75% happened about 75% of the time: a plain count, entry by

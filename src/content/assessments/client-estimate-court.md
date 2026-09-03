@@ -28,7 +28,9 @@ links:
     url: https://www.fedcourt.gov.au/law-and-practice/practice-documents/practice-notes/gpn-expt
 related:
   - sessions/05-borrowed-numbers
+  - sessions/06-conflicting-evidence
   - sessions/07-the-number-someone-wants
+  - sessions/08-ask-the-room
   - sessions/09-who-carries-the-cost
   - sessions/11-estimate-court
 ---
@@ -120,8 +122,8 @@ your estimate rests on, stated plainly enough that someone who has never seen
 your working could attack them without first having to guess what you meant.
 This mirrors what a real expert witness must provide — the Federal Court's
 Expert Evidence Practice Note requires a report to state the material facts
-and assumptions each opinion is based on, before anyone is entitled to
-question it.
+and assumptions each opinion is based on, so that any challenge to it can be
+aimed at something specific rather than at a guess.
 
 **Due 7 May 2027.**
 

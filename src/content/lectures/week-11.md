@@ -19,7 +19,8 @@ difference is not cosmetic, and today is about why it matters.
 A written disclosure exists so that a challenge can be aimed at something
 specific. This is the second half of the same duty the Federal Court places
 on expert reports: they must state the assumptions and material facts an
-opinion rests on before anyone is entitled to question it. Disclosure and
+opinion rests on, so that any challenge to it can be aimed at something
+specific rather than at a guess. Disclosure and
 challenge are one mechanism, not two — a report that hides its assumptions
 cannot be usefully cross-examined, and an examination that ignores the
 report is not testing the estimate, it is testing improvisation.
@@ -55,7 +56,7 @@ apart, which a written submission on its own cannot do.
 
 ## Outline
 
-- the duty a report owes before anyone may question it
+- how disclosure makes live challenge specific and useful
 - disclosure and challenge as one mechanism, not two separate steps
 - what a sentence can get away with that a live answer cannot
 - accept, reject, widen — old vocabulary, a genuinely new question

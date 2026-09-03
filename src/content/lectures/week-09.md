@@ -9,11 +9,11 @@ related:
   - sessions/09-who-carries-the-cost
 ---
 
-Eight weeks in, every improvement this course has offered has been an
-improvement to the number itself: a wider range, a named assumption, a
-disclosed shared input. All of that assumes the only thing worth asking about
-an estimate is how good it is. Today argues that assumption breaks the moment
-the estimate is used to act on somebody.
+Up to now, every improvement this course has offered has been an improvement
+to the number itself: a wider range, a named assumption, a disclosed shared
+input. All of that assumes the only thing worth asking about an estimate is
+how good it is. Today argues that assumption breaks the moment the estimate is
+used to act on somebody.
 
 ## Two questions, one habit of merging them
 

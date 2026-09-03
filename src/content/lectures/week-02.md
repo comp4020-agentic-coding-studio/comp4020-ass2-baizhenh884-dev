@@ -64,7 +64,7 @@ choice somebody made and did not necessarily write down.
 
 There is no probability here. No error propagation, no independence, no formula
 for how uncertainties combine. That machinery exists and this course does not
-use it, because the judgment being trained sits upstream of it: build a
+use it, because what matters here comes earlier than any of it: build a
 structure you can point at, and be able to say what you were counting.
 
 ## Outline

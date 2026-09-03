@@ -69,7 +69,8 @@ record says:
 - **2,581 rows.**
 - **2,581 distinct `stop_id` values** --- so every row carries its own
   identifier.
-- **2,570 distinct `stop_name` values** --- so eleven names are used twice.
+- **2,570 distinct `stop_name` values** --- eleven fewer than there are rows,
+  which tells you some names repeat, not how many names or how often.
 - Each row carries a name, an id, and a latitude and longitude.
 
 Two things that figure is not.
@@ -84,8 +85,8 @@ And it is not, on its own evidence, a count of physical stops. It is a count of
 **stop records**. Whether two records at the same intersection are two stops or
 one stop with two sides, whether a shelter and an unsheltered pole both count,
 whether a stop served by four routes is one thing or four --- the dataset does
-not say. Those eleven repeated names are a hint that something is going on, not
-an answer.
+not say. That shortfall of eleven is a hint that something is going on, not an
+answer.
 
 ## Comparing definitions, not just numbers
 

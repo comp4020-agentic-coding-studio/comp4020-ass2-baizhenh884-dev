@@ -21,10 +21,10 @@ links:
     url: https://www.bom.gov.au/climate/dwo/IDCJDW2801.latest.shtml
 ---
 
-Every target this course has given you so far already existed by the time you
-picked up a range — a rainfall total already fallen, a Census already taken, a
-business case already published. Today that stops. What you commit to next
-does not have an answer yet, anywhere, for anyone.
+A rainfall total already fallen. A Census already taken. A business case
+already published. Every target this course has given you so far already
+existed by the time you picked up a range. Today that stops — what you commit
+to next does not have an answer yet, anywhere, for anyone.
 
 ## A dated commitment
 
@@ -64,7 +64,7 @@ This is not a lesson about inflation or monetary policy, and you do not need
 either to take the point. Set aside every question of why the economy moved
 the way it did. What is left, once you do, is a single fact worth all your
 attention: a national institution put a dated, conditional claim about the
-future on the public record, and eighteen months later the record itself
+future on the public record, and fifteen months later the record itself
 supplied the score. Nobody had to argue about whether the claim held. The
 calendar answered it.
 

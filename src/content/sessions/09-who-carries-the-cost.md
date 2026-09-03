@@ -21,8 +21,8 @@ links:
 
 Every session so far has asked how good your number was. This one asks what
 happens once a number stops being an exercise and starts being acted on —
-and it asks it about a case where the acting-on happened to more than 850,000
-people at once.
+and it asks it about a case built from a pool of more than 850,000 flagged
+cases, where the acting-on reached several hundred thousand people at once.
 
 ## The scheme
 

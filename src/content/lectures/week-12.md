@@ -9,10 +9,10 @@ related:
   - sessions/12-your-own-track-record
 ---
 
-Every week until now has asked whether one particular number was any good.
-Today the object being studied changes. It is not the Melbourne count, the
-airport temperature, or any other quantity out there in the world. It is you,
-across everything you have written down since week 4.
+The object being studied changes today. Until now, each week has asked
+whether one particular number was any good — not the Melbourne count, the
+airport temperature, or any other quantity out there in the world. Today it is
+you, across everything you have written down since week 4.
 
 ## What a single result cannot carry
 
