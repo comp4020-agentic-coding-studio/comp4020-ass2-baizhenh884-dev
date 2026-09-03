@@ -113,6 +113,17 @@ The proposal must state three things: the specific problem that triggered it
 is working (a check that fails if it's violated, or a concrete situation to
 watch for next time).
 
+When an instruction I give you rests on an assumption that conflicts with the
+repository, a schema, the brief, implemented behaviour or verified source
+material, don't follow it mechanically and don't quietly correct it either.
+Name the conflict, cite the concrete evidence, including file and line where
+available, say what following the instruction would actually produce, propose
+the smallest safer alternative, and wait for my approval on the disputed
+part. Continue only with unrelated work that does not depend on the disputed
+decision and cannot create an inconsistent implementation. A design preference
+of your own is not a conflict. If resolving it would mean editing frozen or
+excluded files, say so and wait rather than editing them.
+
 Never edit this file to add or change a rule without my approval first --- show
 the proposed diff and wait, every time, for every future change. This file can
 hold both durable working constraints and current-project facts or contracts
@@ -126,4 +137,4 @@ approved, commit it on its own, separate from unrelated work, so it can be
 cited individually in `PROCESS.md`.
 
 The project-specific contracts for this deliverable are the course facts and
-the six guardrails above.
+the seven guardrails above.
