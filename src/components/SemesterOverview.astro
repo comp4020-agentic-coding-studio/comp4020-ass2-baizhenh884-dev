@@ -1,0 +1,115 @@
+---
+import { getPublishedCollection } from "astro-course-university/content";
+import { withBase } from "astro-theme-university/url";
+import { formatCourseDate } from "../lib/dates";
+
+const sessions = (await getPublishedCollection("sessions")).sort(
+  (a, b) => a.data.week - b.data.week,
+);
+const lectures = await getPublishedCollection("lectures");
+const assessments = await getPublishedCollection("assessments");
+
+const lectureByWeek = new Map(lectures.map((entry) => [entry.data.week, entry]));
+const assessmentsByWeek = new Map<number, typeof assessments>();
+for (const assessment of assessments) {
+  const list = assessmentsByWeek.get(assessment.data.week) ?? [];
+  list.push(assessment);
+  assessmentsByWeek.set(assessment.data.week, list);
+}
+
+// The teaching break isn't a stored fact: it's derived from the sessions'
+// own dates, so it can't drift out of sync with them. Any gap wider than a
+// week marks where the break falls.
+let breakBeforeWeek: number | undefined;
+let breakStart: Date | undefined;
+for (let i = 1; i < sessions.length; i++) {
+  const gapDays =
+    (sessions[i].data.date.getTime() - sessions[i - 1].data.date.getTime()) / 86_400_000;
+  if (gapDays > 7) {
+    breakBeforeWeek = sessions[i].data.week;
+    breakStart = new Date(sessions[i - 1].data.date.getTime() + 7 * 86_400_000);
+    break;
+  }
+}
+---
+
+<div class="table-scroll">
+  <table>
+    <thead>
+      <tr>
+        <th scope="col">Week</th>
+        <th scope="col">Lecture</th>
+        <th scope="col">Tutorial</th>
+        <th scope="col">Assessment</th>
+      </tr>
+    </thead>
+    <tbody>
+      {
+        sessions.map((session) => {
+          const week = session.data.week;
+          const weekLecture = lectureByWeek.get(week);
+          const weekAssessments = assessmentsByWeek.get(week) ?? [];
+          return (
+            <>
+              {week === breakBeforeWeek && breakStart && (
+                <tr class="teaching-break">
+                  <td colspan="4">
+                    <strong>Teaching break</strong> — week commencing{" "}
+                    {formatCourseDate(breakStart)}. No lecture or tutorial.
+                  </td>
+                </tr>
+              )}
+              <tr>
+                <th scope="row">Week {week}</th>
+                <td>
+                  {weekLecture && (
+                    <a href={withBase(`/lectures/${weekLecture.id}/`)}>{weekLecture.data.title}</a>
+                  )}
+                </td>
+                <td>
+                  <a href={withBase(`/sessions/${session.id}/`)}>{session.data.title}</a>
+                </td>
+                <td>
+                  {weekAssessments.length === 0
+                    ? "—"
+                    : weekAssessments.map((assessment, index) => (
+                        <>
+                          {index > 0 && ", "}
+                          <a href={withBase(`/assessments/${assessment.id}/`)}>
+                            {assessment.data.title}
+                          </a>
+                        </>
+                      ))}
+                </td>
+              </tr>
+            </>
+          );
+        })
+      }
+    </tbody>
+  </table>
+</div>
+
+<style>
+  .table-scroll {
+    overflow-x: auto;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  th,
+  td {
+    padding: 0.5rem 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid var(--at-border, currentColor);
+    vertical-align: top;
+  }
+
+  .teaching-break td {
+    background: var(--at-bg-alt);
+    font-style: italic;
+  }
+</style>

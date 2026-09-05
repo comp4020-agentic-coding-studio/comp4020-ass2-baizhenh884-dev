@@ -21,23 +21,48 @@ import { sessionLabels, siteConfig } from "../site-config";
     {courseMeta.tags.map((tag) => <li>{tag}</li>)}
   </ul>
 
-  <!-- STARTER_CONTENT: replace the authored page below, then remove this comment. -->
   <h2>What you will do</h2>
   <p>
-    Say what a student spends their time on — the making, reading, arguing or
-    measuring that fills the weeks. Name the artefact they walk out with.
+    Alongside a semester-long calibration diary — ranges committed before you
+    know the answer — each week gives you a different way estimates go
+    wrong: decomposition, borrowed evidence, disagreement, pressure,
+    aggregation, stakes, forecasting. You decompose real quantities into
+    chains of assumptions, give each one a stated range, and defend it when
+    someone leans on it. The two pieces of graded work are the diary itself
+    and one real, contested estimate, cross-examined in front of the class.
   </p>
 
   <h2>Who it is for</h2>
   <p>
-    Say who this is aimed at and what they need to already know. Be specific
-    enough that someone can rule themselves in or out without emailing you.
+    Anyone who has to give a number to someone who will act on it, without
+    time to run a full study first — the course teaches judgment under
+    incomplete evidence, not formulas.
   </p>
+
+  <h2>How the course runs</h2>
+  <p>
+    Each teaching week runs one lecture, delivered by the course convenor,
+    and one tutorial per student, chosen from four weekly timeslots — all
+    four cover the same session content, taught by one of three tutors.
+    There is a one-week teaching break between Weeks 5 and 6, with no
+    lecture or tutorial that week. Full times, tutors and the semester
+    overview are on the {sessionLabels.plural} page.
+  </p>
+
+  <h2>Assessment</h2>
+  <p>Two pieces of work, no final examination:</p>
+  <ul>
+    <li><strong>Calibration Diary</strong> — 45%</li>
+    <li><strong>Client Estimate &amp; Estimate Court</strong> — 55%</li>
+  </ul>
 
   <h2>Where to go next</h2>
   <CardGrid columns={2}>
+    <Card title="Lectures" href="/lectures/">
+      <p>What each week's lecture covers, and when.</p>
+    </Card>
     <Card title={sessionLabels.plural} href="/sessions/">
-      <p>The weekly schedule and what happens in each teaching session.</p>
+      <p>The weekly tutorial timetable and what happens in each session.</p>
     </Card>
     <Card title="Assessment" href="/assessments/">
       <p>What is marked, what it is worth, and when it is due.</p>

@@ -1,18 +1,41 @@
 ---
 import ContentLayout from "astro-theme-university/layouts/ContentLayout.astro";
+import SemesterOverview from "../../components/SemesterOverview.astro";
 import SessionsGrid from "../../components/SessionsGrid.astro";
+import Timetable from "../../components/Timetable.astro";
 import { sessionLabels, siteConfig } from "../../site-config";
 ---
 
 <ContentLayout
   title={sessionLabels.plural}
-  description={`The twelve-week teaching schedule: what happens in each ${sessionLabels.singular.toLowerCase()}, what to prepare, and what leaves the room.`}
+  description={`The twelve-week teaching schedule: when your tutorial runs, what happens in each ${sessionLabels.singular.toLowerCase()}, and what leaves the room.`}
   {...siteConfig}
 >
   <p>
-    The internal collection and URL stay <code>sessions</code>. Set the visible
-    singular and plural names once in <code>src/site-config.ts</code> and use
-    the language your course deserves everywhere readers see it.
+    Each week's {sessionLabels.singular.toLowerCase()} runs once, but in four
+    timeslots — pick whichever one fits your timetable and attend the same one
+    each week. All four cover the same material, taught by one of three
+    tutors.
   </p>
+
+  <h2>Weekly timetable</h2>
+  <Timetable />
+
+  <h2>Reading the dates below</h2>
+  <p>
+    Every {sessionLabels.singular.toLowerCase()} and lecture below is dated to
+    the Monday of its teaching week — that date identifies the week, not the
+    day you attend. Your own tutorial runs on the day and time shown in the
+    timetable above, in that same week.
+  </p>
+
+  <h2>Semester overview</h2>
+  <p>
+    Assessments are listed against their declared teaching week; see each
+    assessment page for its due date.
+  </p>
+  <SemesterOverview />
+
+  <h2>Every {sessionLabels.singular}</h2>
   <SessionsGrid />
 </ContentLayout>

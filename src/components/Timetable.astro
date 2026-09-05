@@ -1,0 +1,71 @@
+---
+import { getEntry } from "astro:content";
+import { withBase } from "astro-theme-university/url";
+import { lecture, tutorialTimeslots } from "../timetable";
+
+const convenor = await getEntry("people", lecture.convenor);
+const tutorials = await Promise.all(
+  tutorialTimeslots.map(async (slot) => ({
+    ...slot,
+    person: await getEntry("people", slot.tutor),
+  })),
+);
+---
+
+<div class="table-scroll">
+  <table>
+    <thead>
+      <tr>
+        <th scope="col">Session</th>
+        <th scope="col">When</th>
+        <th scope="col">Led by</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Lecture</th>
+        <td>{lecture.day}, {lecture.time}</td>
+        <td>
+          {convenor && <a href={withBase(`/people/${convenor.id}/`)}>{convenor.data.title}</a>}
+        </td>
+      </tr>
+      {
+        tutorials.map((slot) => (
+          <tr>
+            <th scope="row">Tutorial {slot.code}</th>
+            <td>
+              {slot.day}, {slot.time}
+            </td>
+            <td>
+              {slot.person && (
+                <a href={withBase(`/people/${slot.person.id}/`)}>{slot.person.data.title}</a>
+              )}
+            </td>
+          </tr>
+        ))
+      }
+    </tbody>
+  </table>
+</div>
+<p>
+  All four tutorial timeslots cover the same weekly session — pick whichever
+  one fits your own timetable.
+</p>
+
+<style>
+  .table-scroll {
+    overflow-x: auto;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  th,
+  td {
+    padding: 0.5rem 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid var(--at-border, currentColor);
+  }
+</style>
