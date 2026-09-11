@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4800 480" width="4800" height="480" role="img">
+  <!-- Staff portrait, one of a set of four. Same two-ink risograph
+       construction as the locked homepage hero and social card: warm black
+       #1e1810 and gold #b97d1c on cream #fbf6ed, with a bronze #8a5c13
+       off-register ghost and a halftone clipped to the gold mass only. An
+       abstract head-and-shoulders mark for a fictional course character, not
+       a likeness of a real person and not a biographical claim.
+
+       The canvas is 10:1 so that every consumer shows the full 480 height:
+       the People card (16:9, src x1973-2827), the 390px mobile hero
+       (src x2140-2660) and the person hero from 1440 to 3600 wide.
+
+       Brows, eyes, nose and mouth sit in y108-226. The person-page title
+       reaches source y248 at the widths where it also reaches the face, so
+       those marks stay clear of it; the chin, neck and shoulders fall behind
+       it and are ghosted by the theme's stock scrim.
+
+       Her hair is deliberately the opposite construction to Elena's: swept
+       up and back into a wide crown, gathered into
+       a volume at the upper back rather than falling past the jaw, leaving the
+       nape bare. Outer edges stay at x2272-2574, inside the mobile window. -->
+  <defs>
+    <pattern id="halftone-anika-solberg" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="7" cy="7" r="4.5" fill="#1e1810"/>
+      <circle cx="20" cy="20" r="2.6" fill="#1e1810"/>
+    </pattern>
+    <path id="head-anika-solberg" d="M 2400 58 C 2468 58 2518 100 2518 156 C 2518 204 2468 252 2400 256 C 2332 252 2282 204 2282 156 C 2282 100 2332 58 2400 58 Z"/>
+    <path id="crown-anika-solberg" d="M 2272 132 C 2262 68 2316 28 2400 28 C 2484 28 2538 68 2528 132 Q 2464 112 2400 114 Q 2336 112 2272 132 Z"/>
+    <path id="gather-anika-solberg" d="M 2496 54 C 2542 48 2574 78 2570 110 C 2566 142 2532 156 2500 148 C 2482 122 2480 80 2496 54 Z"/>
+    <path id="shoulders-anika-solberg" d="M 2348 290 C 2270 296 2198 316 2120 372 C 2086 398 2068 422 2068 446 L 2732 446 C 2732 422 2714 398 2680 372 C 2602 316 2530 296 2452 290 Z"/>
+    <clipPath id="clip-shoulders-anika-solberg"><use href="#shoulders-anika-solberg"/></clipPath>
+  </defs>
+
+  <rect width="4800" height="480" fill="#fbf6ed"/>
+
+  <!-- off-register second pass, the bronze fringe of a riso print -->
+  <g transform="translate(7 8)" opacity="0.20" fill="#8a5c13">
+    <use href="#shoulders-anika-solberg"/>
+    <use href="#gather-anika-solberg"/>
+    <use href="#head-anika-solberg"/>
+    <use href="#crown-anika-solberg"/>
+  </g>
+
+  <!-- neck, behind the shoulder mass -->
+  <path d="M 2356 236 L 2444 236 L 2450 300 L 2350 300 Z" fill="#fffdf7" stroke="#1e1810" stroke-width="15"
+    stroke-linejoin="round"/>
+
+  <!-- shoulders: the bold gold mass, echoing the hero flap and card flap -->
+  <use href="#shoulders-anika-solberg" fill="#b97d1c"/>
+  <g clip-path="url(#clip-shoulders-anika-solberg)" opacity="0.18">
+    <rect x="2000" y="280" width="800" height="180" fill="url(#halftone-anika-solberg)"/>
+  </g>
+  <use href="#shoulders-anika-solberg" fill="none" stroke="#1e1810" stroke-width="17"
+    stroke-linejoin="round"/>
+
+  <!-- wide shallow boat neckline: her own garment shape in the set -->
+  <path d="M 2312 292 Q 2400 324 2488 292 L 2492 308 Q 2400 344 2308 308 Z" fill="#fffdf7" stroke="#1e1810" stroke-width="9" stroke-linejoin="round"/>
+
+  <!-- head, in the same paper tone as the locked card's envelope face -->
+  <use href="#head-anika-solberg" fill="#fffdf7" stroke="#1e1810" stroke-width="15"
+    stroke-linejoin="round"/>
+  <use href="#crown-anika-solberg" fill="#1e1810"/>
+  <!-- hair gathered up behind one side, overlapping the crown so it reads as
+       attached volume rather than a detached shape -->
+  <use href="#gather-anika-solberg" fill="#1e1810"/>
+
+  <path d="M 2330 120 Q 2356 108 2382 118" stroke="#1e1810" stroke-width="11" stroke-linecap="round" fill="none"/><path d="M 2418 118 Q 2444 108 2470 120" stroke="#1e1810" stroke-width="11" stroke-linecap="round" fill="none"/><path d="M 2337 156 C 2344 147 2360 147 2367 156 C 2360 165 2344 165 2337 156 Z" fill="#1e1810"/><path d="M 2433 156 C 2440 147 2456 147 2463 156 C 2456 165 2440 165 2433 156 Z" fill="#1e1810"/><path d="M 2400 178 L 2409 197" stroke="#1e1810" stroke-width="9" stroke-linecap="round" fill="none"/><path d="M 2380 218 Q 2400 226 2420 218" stroke="#1e1810" stroke-width="9" stroke-linecap="round" fill="none"/>
+</svg>

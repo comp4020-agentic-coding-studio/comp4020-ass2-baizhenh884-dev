@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4800 480" width="4800" height="480" role="img">
+  <!-- Staff portrait, one of a set of four. Same two-ink risograph
+       construction as the locked homepage hero and social card: warm black
+       #1e1810 and gold #b97d1c on cream #fbf6ed, with a bronze #8a5c13
+       off-register ghost and a halftone clipped to the gold mass only. An
+       abstract head-and-shoulders mark, not a likeness of a real person.
+
+       The canvas is 10:1 so that every consumer shows the full 480 height:
+       the People card (16:9, src x1973-2827), the 390px mobile hero
+       (src x2140-2660) and the person hero from 1440 to 3600 wide. The
+       figure therefore fills 86% of the card's height instead of the 42%
+       a 3:1 canvas allowed.
+
+       Brows, eyes, nose and mouth sit in y128-226. The person-page title
+       reaches source y248 at the widths where it also reaches the face, so
+       those marks stay clear of it; the chin, neck and shoulders fall behind
+       it and are ghosted by the theme's stock scrim. -->
+  <defs>
+    <pattern id="halftone-femi-adeyemi" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="7" cy="7" r="4.5" fill="#1e1810"/>
+      <circle cx="20" cy="20" r="2.6" fill="#1e1810"/>
+    </pattern>
+    <path id="head-femi-adeyemi" d="M 2400 48 C 2472 48 2516 92 2512 154 C 2508 212 2458 252 2400 270 C 2342 252 2292 212 2288 154 C 2284 92 2328 48 2400 48 Z"/>
+    <path id="crown-femi-adeyemi" d="M 2288 124 C 2292 62 2338 34 2400 34 C 2462 34 2508 62 2512 124 L 2288 124 Z"/>
+    <path id="shoulders-femi-adeyemi" d="M 2348 290 C 2270 296 2190 316 2112 370 C 2078 396 2060 422 2060 446 L 2740 446 C 2740 422 2722 396 2688 370 C 2610 316 2530 296 2452 290 Z"/>
+    <clipPath id="clip-shoulders-femi-adeyemi"><use href="#shoulders-femi-adeyemi"/></clipPath>
+  </defs>
+
+  <rect width="4800" height="480" fill="#fbf6ed"/>
+
+  <!-- off-register second pass, the bronze fringe of a riso print -->
+  <g transform="translate(-7 -8)" opacity="0.20" fill="#8a5c13">
+    <use href="#shoulders-femi-adeyemi"/>
+    <use href="#head-femi-adeyemi"/>
+    <use href="#crown-femi-adeyemi"/>
+  </g>
+
+  <!-- neck, behind the shoulder mass -->
+  <path d="M 2356 236 L 2444 236 L 2450 300 L 2350 300 Z" fill="#fffdf7" stroke="#1e1810" stroke-width="15"
+    stroke-linejoin="round"/>
+
+  <!-- shoulders: the bold gold mass, echoing the hero flap and card flap -->
+  <use href="#shoulders-femi-adeyemi" fill="#b97d1c"/>
+  <g clip-path="url(#clip-shoulders-femi-adeyemi)" opacity="0.18">
+    <rect x="2000" y="280" width="800" height="180" fill="url(#halftone-femi-adeyemi)"/>
+  </g>
+  <use href="#shoulders-femi-adeyemi" fill="none" stroke="#1e1810" stroke-width="17"
+    stroke-linejoin="round"/>
+  <path d="M 2342 286 Q 2400 320 2458 286 L 2462 316 Q 2400 352 2338 316 Z" fill="#fffdf7" stroke="#1e1810" stroke-width="9" stroke-linejoin="round"/>
+
+  <!-- head, in the same paper tone as the locked card's envelope face -->
+  <use href="#head-femi-adeyemi" fill="#fffdf7" stroke="#1e1810" stroke-width="15"
+    stroke-linejoin="round"/>
+  <use href="#crown-femi-adeyemi" fill="#1e1810"/>
+  
+
+  <path d="M 2328 120 L 2380 120" stroke="#1e1810" stroke-width="13" stroke-linecap="round" fill="none"/><path d="M 2420 120 L 2472 120" stroke="#1e1810" stroke-width="13" stroke-linecap="round" fill="none"/><circle cx="2354" cy="158" r="9.5" fill="#1e1810"/><circle cx="2446" cy="158" r="9.5" fill="#1e1810"/><path d="M 2400 174 L 2400 200" stroke="#1e1810" stroke-width="9" stroke-linecap="round" fill="none"/><path d="M 2378 224 L 2422 224" stroke="#1e1810" stroke-width="9" stroke-linecap="round" fill="none"/>
+</svg>

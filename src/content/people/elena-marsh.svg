@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4800 480" width="4800" height="480" role="img">
+  <!-- Staff portrait, one of a set of four. Same two-ink risograph
+       construction as the locked homepage hero and social card: warm black
+       #1e1810 and gold #b97d1c on cream #fbf6ed, with a bronze #8a5c13
+       off-register ghost and a halftone clipped to the gold mass only. An
+       abstract head-and-shoulders mark for a fictional course character, not
+       a likeness of a real person and not a biographical claim.
+
+       The canvas is 10:1 so that every consumer shows the full 480 height:
+       the People card (16:9, src x1973-2827), the 390px mobile hero
+       (src x2140-2660) and the person hero from 1440 to 3600 wide.
+
+       Brows, eyes, nose and mouth sit in y120-222. The person-page title
+       reaches source y248 at the widths where it also reaches the face, so
+       those marks stay clear of it; the chin, neck and shoulders fall behind
+       it and are ghosted by the theme's stock scrim.
+
+       The hair is a two-part mass in the set's usual flat ink: a back shape
+       drawn over the shoulders and behind the head, so it reads as falling
+       past the jaw, plus a swept fringe over the forehead. Outer hair edges
+       stay at x2268-2532, inside the mobile window. -->
+  <defs>
+    <pattern id="halftone-elena-marsh" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="7" cy="7" r="4.5" fill="#1e1810"/>
+      <circle cx="20" cy="20" r="2.6" fill="#1e1810"/>
+    </pattern>
+    <path id="head-elena-marsh" d="M 2400 56 C 2452 56 2494 98 2494 152 C 2494 198 2456 246 2400 262 C 2344 246 2306 198 2306 152 C 2306 98 2348 56 2400 56 Z"/>
+    <path id="hair-elena-marsh" d="M 2400 28 C 2496 28 2538 88 2532 160 C 2528 216 2522 260 2516 290 L 2464 290 C 2482 252 2490 210 2490 166 C 2490 112 2452 80 2400 80 C 2348 80 2310 112 2310 166 C 2310 210 2318 252 2336 290 L 2284 290 C 2278 260 2272 216 2268 160 C 2262 88 2304 28 2400 28 Z"/>
+    <path id="fringe-elena-marsh" d="M 2300 122 C 2304 62 2342 42 2402 42 C 2462 42 2498 64 2500 120 Q 2462 98 2420 104 C 2380 110 2338 112 2300 122 Z"/>
+    <path id="shoulders-elena-marsh" d="M 2348 290 C 2270 296 2210 316 2132 376 C 2098 402 2080 422 2080 446 L 2720 446 C 2720 422 2702 402 2668 376 C 2590 316 2530 296 2452 290 Z"/>
+    <clipPath id="clip-shoulders-elena-marsh"><use href="#shoulders-elena-marsh"/></clipPath>
+  </defs>
+
+  <rect width="4800" height="480" fill="#fbf6ed"/>
+
+  <!-- off-register second pass, the bronze fringe of a riso print -->
+  <g transform="translate(8 -6)" opacity="0.20" fill="#8a5c13">
+    <use href="#shoulders-elena-marsh"/>
+    <use href="#hair-elena-marsh"/>
+    <use href="#head-elena-marsh"/>
+    <use href="#fringe-elena-marsh"/>
+  </g>
+
+  <!-- neck, behind the shoulder mass -->
+  <path d="M 2356 236 L 2444 236 L 2450 300 L 2350 300 Z" fill="#fffdf7" stroke="#1e1810" stroke-width="15"
+    stroke-linejoin="round"/>
+
+  <!-- shoulders: the bold gold mass, echoing the hero flap and card flap -->
+  <use href="#shoulders-elena-marsh" fill="#b97d1c"/>
+  <g clip-path="url(#clip-shoulders-elena-marsh)" opacity="0.18">
+    <rect x="2000" y="280" width="800" height="180" fill="url(#halftone-elena-marsh)"/>
+  </g>
+  <use href="#shoulders-elena-marsh" fill="none" stroke="#1e1810" stroke-width="17"
+    stroke-linejoin="round"/>
+
+  <!-- rounded scoop neckline: her own garment shape in the set -->
+  <path d="M 2352 286 Q 2400 350 2448 286 L 2462 294 Q 2400 368 2338 294 Z" fill="#fffdf7" stroke="#1e1810" stroke-width="9" stroke-linejoin="round"/>
+
+  <!-- hair falls over the shoulder mass, behind the head -->
+  <use href="#hair-elena-marsh" fill="#1e1810"/>
+
+  <!-- head, in the same paper tone as the locked card's envelope face -->
+  <use href="#head-elena-marsh" fill="#fffdf7" stroke="#1e1810" stroke-width="15"
+    stroke-linejoin="round"/>
+  <use href="#fringe-elena-marsh" fill="#1e1810"/>
+
+  <path d="M 2334 122 Q 2357 116 2380 120" stroke="#1e1810" stroke-width="11" stroke-linecap="round" fill="none"/><path d="M 2420 120 Q 2443 116 2466 122" stroke="#1e1810" stroke-width="11" stroke-linecap="round" fill="none"/><path d="M 2341 156 C 2348 147 2364 147 2371 156 C 2364 165 2348 165 2341 156 Z" fill="#1e1810"/><path d="M 2429 156 C 2436 147 2452 147 2459 156 C 2452 165 2436 165 2429 156 Z" fill="#1e1810"/><path d="M 2400 174 L 2400 200" stroke="#1e1810" stroke-width="9" stroke-linecap="round" fill="none"/><path d="M 2384 222 L 2416 222" stroke="#1e1810" stroke-width="9" stroke-linecap="round" fill="none"/>
+</svg>
