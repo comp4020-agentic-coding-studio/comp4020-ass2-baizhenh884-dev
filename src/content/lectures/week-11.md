@@ -4,7 +4,7 @@ description:
   Week 11 — why a written justification can hide exactly the weakness a live
   question exposes in seconds, and what the Court is actually testing for
 week: 11
-date: 2027-05-10
+date: 2027-05-17
 related:
   - sessions/11-estimate-court
 ---

@@ -1,10 +1,19 @@
 ---
+import { getPublishedCollection } from "astro-course-university/content";
 import Card from "astro-theme-university/components/Card.astro";
 import CardGrid from "astro-theme-university/components/CardGrid.astro";
 import ContentLayout from "astro-theme-university/layouts/ContentLayout.astro";
 import heroImage from "../assets/images/hero-home.svg";
 import { courseMeta } from "../course-config";
+import { findTeachingBreak, spellCount } from "../lib/dates";
 import { sessionLabels, siteConfig } from "../site-config";
+
+// Derived from the sessions' own dates rather than written out, so this
+// sentence cannot fall out of step with the semester overview table.
+const sessions = await getPublishedCollection("sessions");
+const teachingBreak = findTeachingBreak(
+  sessions.map((session) => ({ week: session.data.week, date: session.data.date })),
+);
 ---
 
 <ContentLayout
@@ -41,9 +50,19 @@ import { sessionLabels, siteConfig } from "../site-config";
     Each teaching week runs one lecture, delivered by the course convenor,
     and one tutorial per student, chosen from four weekly timeslots — all
     four cover the same session content, taught by one of three tutors.
-    There is a one-week teaching break between Weeks 5 and 6, with no
-    lecture or tutorial that week. Full times, tutors and the semester
-    overview are on the {sessionLabels.plural} page.
+    {
+      teachingBreak && (
+        <>
+          {" "}
+          There is a {spellCount(teachingBreak.weeks)}-week teaching break
+          between Weeks {teachingBreak.afterWeek} and {teachingBreak.beforeWeek}
+          , with no lecture or tutorial in either of those weeks.{" "}
+        </>
+      )
+    }
+    Full times, tutors and the semester overview are on the {
+      sessionLabels.plural
+    } page.
   </p>
 
   <h2>Assessment</h2>

@@ -4,7 +4,7 @@ description:
   Week 7 — how pressure actually arrives, the test that separates an honest
   change from a concession, and why the defences have to be built early
 week: 7
-date: 2027-04-12
+date: 2027-04-19
 related:
   - sessions/07-the-number-someone-wants
 ---

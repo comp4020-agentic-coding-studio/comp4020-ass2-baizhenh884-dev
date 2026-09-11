@@ -4,7 +4,7 @@ description:
   The whole semester's set of ranges, read together for the particular way you
   tend to be wrong — a shape no single estimate could ever have shown you
 week: 12
-date: 2027-05-17
+date: 2027-05-24
 tags:
   - calibration
   - reflection
@@ -28,7 +28,7 @@ all?
 
 Start with the entry you cannot revise. Take out your week 10 forecast — the
 sealed low bound, high bound, confidence, and miss-line for Canberra Airport's
-daily maximum on 13 May 2027 — and check it, for the first time, against the
+daily maximum on 20 May 2027 — and check it, for the first time, against the
 Bureau of Meteorology's Daily Weather Observations for Canberra, ACT, the
 exact product you named as your resolution source two weeks ago. Record
 what it shows and whether your range held it, honestly, before you touch

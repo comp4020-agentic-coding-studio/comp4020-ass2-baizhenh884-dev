@@ -4,7 +4,7 @@ description:
   Week 8 — the single mechanism that makes combining estimates work, what
   happens when it is absent, and why agreement is not evidence
 week: 8
-date: 2027-04-19
+date: 2027-04-26
 related:
   - sessions/08-ask-the-room
 ---

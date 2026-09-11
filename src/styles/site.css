@@ -1,0 +1,48 @@
+/*
+ * Site-side overrides, loaded on every page via the theme's `brandCss` hook.
+ * The theme's own rules live in `@layer at.*`, so unlayered declarations here
+ * win the cascade regardless of load order.
+ */
+
+/*
+ * Header only: room for a sixth nav item.
+ *
+ * `.at-nav-inner` is a flex row (brand + link list + search button) sitting in
+ * the body grid's `content` column, 48rem wide. With six links the row needs
+ * ~911px against 864px available, so `flex-wrap` broke the search button onto
+ * a second line under the brand.
+ *
+ * Two separate problems, two fixes.
+ *
+ * 1. `flex-wrap: nowrap` above the theme's breakpoint. The theme already has a
+ *    considered answer for a link row that outgrows its space: `.at-nav-links`
+ *    is `overflow-x: auto` with a scroll-driven fade mask. It never engaged,
+ *    because flex line-breaking uses hypothetical main sizes and so moves the
+ *    search button to a second row before anything gets a chance to shrink.
+ *    `wrap` is only needed below 640px, where the links wrapper becomes
+ *    `width: 100%; order: 3` for the hamburger menu. Above it, the row should
+ *    stay a row and overflow the way the theme intended.
+ *
+ * 2. A bounded width increase, so that intended overflow is reserved for
+ *    genuinely narrow desktops instead of being the normal state. ~911px does
+ *    not fit between the gutters below a ~1048px viewport at any cap, so this
+ *    only governs wide widths: the row still starts at `content-start`, keeping
+ *    the brand's alignment and leaving everything below the header untouched,
+ *    and extends at most 4rem past the content column's right edge. That is
+ *    the same order as the 53px the theme already lets the brand overhang on
+ *    the left, so the header stays tied to the page rather than stretched
+ *    across the viewport, while leaving ~25px of slack over the 911px needed.
+ *    (Measured: the fallback fonts render this row 10-14px *narrower* than the
+ *    webfont, so the loaded state is the widest case and 25px is ample.)
+ *
+ * The end margin keeps a gutter between the search button and the viewport
+ * edge at widths where the cap is not reached.
+ */
+@media (width >= 640px) {
+  .at-nav-inner {
+    flex-wrap: nowrap;
+    grid-column: content-start / full-end;
+    max-inline-size: calc(var(--at-content-width) + 4rem);
+    margin-inline-end: var(--at-gutter);
+  }
+}

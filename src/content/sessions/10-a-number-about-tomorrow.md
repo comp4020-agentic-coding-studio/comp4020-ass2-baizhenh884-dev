@@ -4,7 +4,7 @@ description:
   Every target so far already existed. Today's does not — a dated commitment
   from the Reserve Bank, what happened instead, and a forecast you seal shut
 week: 10
-date: 2027-05-03
+date: 2027-05-10
 tags:
   - forecasting
   - calibration
@@ -84,7 +84,7 @@ condition about the world between now and then.
 
 One target, shared by the whole room:
 
-> **Canberra Airport's official daily maximum temperature on 13 May 2027**, as
+> **Canberra Airport's official daily maximum temperature on 20 May 2027**, as
 > published in the Bureau of Meteorology's Daily Weather Observations for
 > Canberra, ACT.
 

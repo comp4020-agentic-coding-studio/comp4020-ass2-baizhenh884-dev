@@ -21,6 +21,13 @@ export const siteConfig = defineSiteConfig({
   name: "Slop University",
 
   links: [
+    // "/." rather than "/": the theme marks a nav link current when the path
+    // starts with it, guarding only against a literal "/" (Nav.astro). Under a
+    // GitHub Pages base path withBase("/") yields "/<repo>/", which defeats
+    // that guard and would mark Home current on every page. "/." is not a
+    // prefix of any page path, and the browser normalises it back to the
+    // canonical homepage URL.
+    { text: "Home", href: "/." },
     { text: "Lectures", href: "/lectures/" },
     { text: sessionLabels.plural, href: "/sessions/" },
     { text: "Assessment", href: "/assessments/" },

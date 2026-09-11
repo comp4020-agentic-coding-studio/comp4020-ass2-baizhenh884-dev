@@ -4,7 +4,7 @@ description:
   A real business case that came out below one, an evaluation that says exactly
   where the pressure went, and an hour spent finding out what you would have done
 week: 7
-date: 2027-04-12
+date: 2027-04-19
 tags:
   - incentives
   - defensibility

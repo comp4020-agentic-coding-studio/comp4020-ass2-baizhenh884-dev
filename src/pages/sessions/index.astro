@@ -1,8 +1,8 @@
 ---
 import ContentLayout from "astro-theme-university/layouts/ContentLayout.astro";
 import SemesterOverview from "../../components/SemesterOverview.astro";
-import SessionsGrid from "../../components/SessionsGrid.astro";
 import Timetable from "../../components/Timetable.astro";
+import WeekList from "../../components/WeekList.astro";
 import { sessionLabels, siteConfig } from "../../site-config";
 ---
 
@@ -37,5 +37,5 @@ import { sessionLabels, siteConfig } from "../../site-config";
   <SemesterOverview />
 
   <h2>Every {sessionLabels.singular}</h2>
-  <SessionsGrid />
+  <WeekList collection="sessions" headingLevel="h3" />
 </ContentLayout>

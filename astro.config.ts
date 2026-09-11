@@ -1,3 +1,4 @@
+import { fileURLToPath } from "node:url";
 import { defineConfig } from "astro/config";
 import courseGraph from "astro-course-university";
 import universityTheme from "astro-theme-university";
@@ -8,6 +9,12 @@ import { gitOrigin, resolveDeployment } from "./scripts/pages-base.ts";
 
 // Derived, never hardcoded --- see scripts/pages-base.ts for why.
 const { site, base } = resolveDeployment(process.env, gitOrigin);
+
+// brandCss entries are injected as bare `import` specifiers into a virtual
+// module, so a project-relative path has nothing to resolve against: "/src/..."
+// is read as an external URL and silently drops, "./src/..." fails outright.
+// An absolute filesystem path resolves in both cases.
+const siteCss = fileURLToPath(new URL("./src/styles/site.css", import.meta.url));
 
 export default defineConfig({
   site,
@@ -22,7 +29,7 @@ export default defineConfig({
       defaultLayout: "src/layouts/PageLayout.astro",
       // The whole brand choice: three colour tokens and a set of lockups. Keep
       // institutional brand packages and assets out of this fictional site.
-      brandCss: "astro-theme-slop/slop.css",
+      brandCss: ["astro-theme-slop/slop.css", siteCss],
       imageFormat: "avif",
       llmsTxt: true,
       // The theme owns the markdown plugin chain, so astromotion's slide

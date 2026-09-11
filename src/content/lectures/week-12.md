@@ -4,7 +4,7 @@ description:
   Week 12 — why no single estimate can reveal whether you are a good
   estimator, and what an accumulated, precommitted record can show instead
 week: 12
-date: 2027-05-17
+date: 2027-05-24
 related:
   - sessions/12-your-own-track-record
 ---

@@ -4,7 +4,7 @@ description:
   A debt-recovery scheme acted on an estimate at scale, and the question that
   outlasts whether the estimate itself was any good — who pays when it is wrong
 week: 9
-date: 2027-04-26
+date: 2027-05-03
 tags:
   - stakes
   - accountability

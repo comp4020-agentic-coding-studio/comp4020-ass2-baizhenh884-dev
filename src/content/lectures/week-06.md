@@ -4,7 +4,7 @@ description:
   Week 6 — why splitting the difference destroys evidence, the small set of axes
   real disagreements sit on, and why nobody warns you at the moment you need it
 week: 6
-date: 2027-04-05
+date: 2027-03-29
 related:
   - sessions/06-conflicting-evidence
 ---

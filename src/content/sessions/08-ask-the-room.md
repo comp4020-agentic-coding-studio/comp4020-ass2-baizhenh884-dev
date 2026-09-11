@@ -4,7 +4,7 @@ description:
   Two rounds of estimates from the same people under two different protocols,
   and a national polling failure that has the same shape as the second round
 week: 8
-date: 2027-04-19
+date: 2027-04-26
 tags:
   - aggregation
   - independence

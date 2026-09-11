@@ -4,7 +4,7 @@ description:
   Week 10 — why a claim about the future needs no new machinery beyond what
   you already have, and the one structural difference that changes everything
 week: 10
-date: 2027-05-03
+date: 2027-05-10
 related:
   - sessions/10-a-number-about-tomorrow
 ---

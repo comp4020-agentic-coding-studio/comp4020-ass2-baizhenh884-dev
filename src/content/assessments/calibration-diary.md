@@ -4,7 +4,7 @@ description:
   A semester-long record of ranges committed before you knew the answer,
   audited at the end for pattern rather than for how often you were right
 week: 4
-due: 2027-05-24T12:00:00+10:00
+due: 2027-05-28T12:00:00+10:00
 weight: 45
 marking:
   mode: weighted

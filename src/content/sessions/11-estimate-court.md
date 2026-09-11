@@ -4,7 +4,7 @@ description:
   The written estimate and its disclosure are already submitted. Today a panel
   reads them, asks one shared question, and follows up on whatever it likes
 week: 11
-date: 2027-05-10
+date: 2027-05-17
 tags:
   - disclosure
   - examination

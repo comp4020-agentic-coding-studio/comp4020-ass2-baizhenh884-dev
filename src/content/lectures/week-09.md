@@ -4,7 +4,7 @@ description:
   Week 9 — why expected accuracy stops being the point once an estimate gets
   acted on, and the two questions the rest of the course has kept merged
 week: 9
-date: 2027-04-26
+date: 2027-05-03
 related:
   - sessions/09-who-carries-the-cost
 ---
