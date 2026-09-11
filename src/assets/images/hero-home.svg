@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2560 1080" width="2560" height="1080" role="img">
+  <!-- Back of the Envelope hero: the course's namesake made literal. A mailing
+       envelope stands as a card on cream working paper, a gold wax seal poured
+       over the flap apex, and a quick estimate scrawled across the back panel.
+
+       Two-ink risograph register - warm black #1e1810 and gold #b97d1c on
+       cream #fbf6ed, with a bronze #8a5c13 off-register ghost. Texture is a
+       halftone dot pattern clipped to the envelope only: no full-canvas
+       turbulence, so the cream stays clean and no edge is softened.
+
+       Composed against measured page geometry:
+
+         y 374-690    all ink. object-fit: cover crops symmetrically about
+                      y 540 and the widest hero shows only y 360-720, so
+                      nothing here is ever sliced.
+         x < 1300     calm bare paper, where the left of the title block lands.
+         x 1300-2260  the envelope, 960 x 316 - close to a long business
+                      envelope in proportion rather than a letterbox strip.
+                      Its left edge does cross the title glyphs (they reach
+                      x 1480 at 2560px, x 1596 at worst), but it crosses at
+                      y 470+, where the scrim's vertical pass already holds
+                      50-65%: a ghost behind the words, not a hard edge.
+         x 1726-1834  the wax seal; x 1350-2150 the scrawled estimate, whose
+                      dot sits at x 1820. All inside the mobile centre-crop's
+                      x 695-1865 window.
+
+       Gold is placed by where the scrim lets it stay gold. The homepage scrim
+       holds 60% black through the lower half and only opens up above ~80% of
+       the hero's height - source y below about 500 - so the bright mass, the
+       filled gold flap and the seal, lives at y 374-502 and is widest along
+       the top row. The scrawl below is gold over an ink underprint so it still
+       reads as marks once the scrim darkens that part of the card. -->
+  <defs>
+    <!-- halftone, for the printed feel; a plain pattern rather than a filter,
+         so it costs nothing to render and softens no edges -->
+    <pattern id="halftone" width="15" height="15" patternUnits="userSpaceOnUse">
+      <circle cx="4" cy="4" r="2.7" fill="#1e1810"/>
+      <circle cx="11.5" cy="11.5" r="1.5" fill="#1e1810"/>
+    </pattern>
+    <pattern id="tooth" width="9" height="9" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.1" fill="#6b6154"/>
+      <circle cx="6.5" cy="6" r="0.8" fill="#6b6154"/>
+    </pattern>
+
+    <path id="card" d="M 1304 380 L 2256 376 L 2260 684 L 1300 690 Z"/>
+    <path id="flap" d="M 1304 380 L 2256 376 L 1770 474 Z"/>
+    <clipPath id="clip-card"><use href="#card"/></clipPath>
+    <clipPath id="clip-flap"><use href="#flap"/></clipPath>
+
+    <!-- a poured disc, deliberately irregular and carrying no mark -->
+    <path id="seal" d="M 1770 378
+             C 1801 377 1823 397 1825 428
+             C 1827 459 1805 484 1772 486
+             C 1739 488 1716 464 1715 433
+             C 1714 403 1738 379 1770 378 Z"/>
+
+    <!-- the estimate, scrawled across the exposed back panel -->
+    <g id="scrawl">
+      <path d="M 1362 522 L 1409 519 L 1412 567 L 1359 570 Z"/>
+      <path d="M 1460 520 L 1508 523 L 1505 569 L 1457 566 Z"/>
+      <path d="M 1558 523 L 1605 520 L 1608 568 L 1556 570 Z"/>
+      <path d="M 1422 545 L 1448 544 M 1435 532 L 1434 558"/>
+      <path d="M 1520 546 L 1546 546 M 1533 533 L 1532 559"/>
+      <path d="M 1650 536 C 1661 526 1672 546 1683 536 C 1694 526 1705 546 1716 536"/>
+      <path d="M 1650 560 C 1661 550 1672 570 1683 560 C 1694 550 1705 570 1716 560"/>
+      <path d="M 1762 522 L 1761 568"/>
+      <path d="M 2148 520 L 2149 566"/>
+      <path d="M 1762 545 L 1955 543 L 2148 545"/>
+    </g>
+  </defs>
+
+  <rect width="2560" height="1080" fill="#fbf6ed"/>
+
+  <!-- the card lifted off the paper: a flat offset shadow, no blur filter -->
+  <g transform="translate(15 13)" opacity="0.13">
+    <use href="#card" fill="#1e1810"/>
+  </g>
+
+  <!-- off-register second pass, the bronze fringe of a riso print -->
+  <g transform="translate(7 -5)" opacity="0.22">
+    <use href="#card" fill="none" stroke="#8a5c13" stroke-width="26" stroke-linejoin="round"/>
+    <use href="#flap" fill="#8a5c13"/>
+    <use href="#seal" fill="#8a5c13"/>
+  </g>
+
+  <!-- envelope body: a solid card, a shade brighter than the paper -->
+  <use href="#card" fill="#fffdf7"/>
+  <g clip-path="url(#clip-card)" opacity="0.05">
+    <rect x="1280" y="350" width="1000" height="360" fill="url(#tooth)"/>
+  </g>
+
+  <!-- back-panel seam: the bottom flap's folded edge -->
+  <path d="M 1312 624 L 1780 620 L 2250 616" fill="none" stroke="#1e1810"
+    stroke-width="11" stroke-linecap="round" opacity="0.85"/>
+
+  <!-- the scrawled estimate: gold over an ink underprint, so it still reads as
+       marks once the scrim darkens this part of the card -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <g stroke="#1e1810" stroke-width="17" opacity="0.9"><use href="#scrawl"/></g>
+    <g stroke="#b97d1c" stroke-width="11"><use href="#scrawl"/></g>
+  </g>
+  <circle cx="1820" cy="545" r="23" fill="#b97d1c" stroke="#1e1810" stroke-width="8"/>
+
+  <!-- flap: the bold gold mass, widest along the top row where the scrim is
+       lightest, tapering to the apex that carries the seal -->
+  <use href="#flap" fill="#b97d1c"/>
+  <g clip-path="url(#clip-flap)" opacity="0.17">
+    <rect x="1280" y="350" width="1000" height="150" fill="url(#halftone)"/>
+  </g>
+  <use href="#flap" fill="none" stroke="#1e1810" stroke-width="20" stroke-linejoin="round"/>
+
+  <!-- heavy ink edge last, so nothing prints over the silhouette -->
+  <use href="#card" fill="none" stroke="#1e1810" stroke-width="24" stroke-linejoin="round"/>
+
+  <!-- wax seal: a poured disc with a pressed rim, abstract and unmarked -->
+  <use href="#seal" fill="#b97d1c" stroke="#1e1810" stroke-width="13"/>
+  <path d="M 1770 398
+           C 1792 397 1806 412 1807 432
+           C 1808 452 1792 467 1772 468
+           C 1751 469 1736 453 1735 433
+           C 1734 413 1749 399 1770 398 Z"
+    fill="none" stroke="#1e1810" stroke-width="6" opacity="0.45"/>
+</svg>

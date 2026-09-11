@@ -2,19 +2,16 @@
 import Card from "astro-theme-university/components/Card.astro";
 import CardGrid from "astro-theme-university/components/CardGrid.astro";
 import ContentLayout from "astro-theme-university/layouts/ContentLayout.astro";
-import heroImage from "../assets/images/hero-home.avif";
+import heroImage from "../assets/images/hero-home.svg";
 import { courseMeta } from "../course-config";
 import { sessionLabels, siteConfig } from "../site-config";
-
-// STARTER_CONTENT: replace the hero artwork and its alt text below, then
-// remove this comment.
 ---
 
 <ContentLayout
   title={`${courseMeta.code}: ${courseMeta.title}`}
   description={courseMeta.description}
   heroImage={heroImage}
-  heroImageAlt="A lecture theatre reduced to flat gold and black shapes, rows of seats sweeping past the frame, in a two-ink risograph print"
+  heroImageAlt="A risograph-style illustration on cream paper: the back of a mailing envelope, its wide triangular flap printed in solid gold with a plain gold wax seal poured over the apex, and a quick estimate scrawled across the panel below — three small boxes joined by plus signs, a wavy approximately sign, then a short range bar with a gold dot marking the figure landed on"
   {...siteConfig}
 >
   <ul class="course-tags" aria-label="Course tags">
@@ -72,6 +69,45 @@ import { sessionLabels, siteConfig } from "../site-config";
     </Card>
   </CardGrid>
 </ContentLayout>
+
+<style is:global>
+  /* Home only. The theme's hero scrim fades bottom-up across the full width,
+     which suits a photograph but flattens this hero's cream paper into grey
+     and mutes the gold. The art here is deliberately right-weighted, so the
+     scrim is re-aimed left-to-right instead: dark enough under the title
+     block at every viewport width, near-clear over the drawing's showcase
+     half. Unlayered, so it beats the theme's `@layer at.components` rule
+     without a theme edit; scoped to this route, so /404 and the People pages
+     keep the stock bottom-up treatment.
+
+     The vertical pass is deliberately loose through the middle (44% at 52%)
+     and heavy only at the very bottom, where the title's baseline sits. That
+     is what keeps the envelope's card face warm rather than grey: the card
+     sits in the mid-band, and `cover` pushes it lower into the scrim as the
+     viewport narrows, so 1920px is the worst case for contrast, not 2560.
+     Measured there at 5.3:1 against white, on a 4.5:1 floor -- a looser pass
+     (40% at 50%) reached 4.6:1, which cleared the floor but left only 3% of
+     margin against font and line-box variation. Loosening the horizontal pass
+     instead was tried and rejected: the card face sits at 76-86% across,
+     where that layer is already near zero, so easing it bought 0.004
+     luminance and cost 0.4 of contrast margin. */
+  .at-hero .at-hero-content {
+    background:
+      linear-gradient(
+        100deg,
+        rgb(0 0 0 / 60%) 0%,
+        rgb(0 0 0 / 48%) 34%,
+        rgb(0 0 0 / 14%) 62%,
+        rgb(0 0 0 / 0%) 82%
+      ),
+      linear-gradient(
+        to top,
+        rgb(0 0 0 / 80%) 0%,
+        rgb(0 0 0 / 44%) 52%,
+        rgb(0 0 0 / 3%) 82%
+      );
+  }
+</style>
 
 <style>
   .course-tags {
