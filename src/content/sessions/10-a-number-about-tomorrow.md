@@ -110,7 +110,12 @@ This is the one Week 10 entry the Calibration Diary requires of you.
 
 ## Leaving
 
-You have made a claim about something that has not happened yet, in the same
-form the Reserve Bank used for a claim of its own. What the Bank's case adds
+You have made a claim about something that has not happened yet. It is not in
+the Bank's form — a bounded range with a stated confidence is not conditional
+forward guidance, and yours resolves on a named date against a named product.
+What the two share is the discipline that matters here: a claim about the
+future, put on the record in advance, specific enough that the world can later
+be checked against it by someone who was not in the room. What the Bank's case
+adds
 is the only thing forecasting ever adds to estimation: nothing to check
 today, and everything to check on the date you named.

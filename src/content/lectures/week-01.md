@@ -1,7 +1,7 @@
 ---
 title: The digits are a claim you did not make
 description:
-  Week 1 — why written precision overstates what is known, and why the first
+  Why written precision overstates what is known, and why the first
   question in any estimate is what the decision needs
 week: 1
 date: 2027-02-22

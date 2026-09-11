@@ -17,12 +17,14 @@ links:
     url: https://robodebt.royalcommission.gov.au/publications/report
   - label: Prime Minister of Australia — Final report of the Royal Commission into the Robodebt Scheme
     url: https://www.pm.gov.au/media/final-report-royal-commission-robodebt-scheme
+  - label: Services Australia — New Robodebt class action settlement, approved 23 June 2026
+    url: https://www.servicesaustralia.gov.au/new-robodebt-class-action-settlement
 ---
 
 Every session so far has asked how good your number was. This one asks what
-happens once a number stops being an exercise and starts being acted on —
-and it asks it about a case built from a pool of more than 850,000 flagged
-cases, where the acting-on reached several hundred thousand people at once.
+happens once a number stops being an exercise and starts being acted on — and
+it asks it about a case where one arithmetic shortcut was applied to hundreds
+of thousands of people, each of whom received a demand for money.
 
 ## The scheme
 
@@ -44,18 +46,32 @@ writing.
 ## Two directions, one exposed to only one of them
 
 An average built from uneven income runs in both directions. Some fortnights
-it overstates what a person earned; others it understates it. Both errors are
-the same size, in principle, and neither is more likely than the other.
+it overstates what a person earned; others it understates it. What it destroys
+is the pattern: twenty-six different fortnights are replaced by one number
+repeated, and every question the Act actually asks is about a particular
+fortnight.
 
-What was not the same was what happened next. Overstate a fortnight's income
-and a debt notice appears in the mail, with a number attached and a date to
-respond by. Understate one and nothing happens at all — a smaller debt, or no
-debt, sits quietly inside a government ledger, discovered by no one, contested
-by no one, costing the recipient nothing.
+Be careful about what follows from that, because the obvious thing to say is
+wrong. The overstatements and the understatements cancel across the year —
+they have to, since they are deviations from the year's own mean — but that
+is the only sense in which they balance. They are not the same size, and they are not
+equally frequent. Their shape depends entirely on the shape of the real
+income. Work the arithmetic on someone who earned the year's income in a
+single busy quarter: in the nine quiet months the average overstates, fortnight
+after fortnight, and in the busy one it understates by a lot, a few times.
+Many overstatements, few understatements, same annual total. Income that
+arrives in bursts rather than evenly produces exactly that asymmetry.
 
-The measurement error is symmetric. The consequence is not. One direction lands
-on a person who has to do something about it. The other direction lands on an
-agency's books, where it can wait indefinitely without hurting anyone.
+Then look at what happened next, which did not depend on the arithmetic at
+all. Overstate a fortnight's income and a debt notice appears in the mail,
+with a number attached and a date to respond by. Understate one and nothing
+happens — a smaller debt, or no debt, sits quietly inside a government ledger,
+discovered by no one, contested by no one, costing the recipient nothing.
+
+That asymmetry is institutional, not mathematical. The rules decided that one
+direction of error would be pursued and the other would not. One lands on a
+person who has to do something about it. The other lands on an agency's books,
+where it can wait indefinitely without hurting anyone.
 
 ## Who had to prove what
 
@@ -81,13 +97,35 @@ The Commission's own words, from its final report:
 A March 2017 tribunal decision found the averaging methodology unlawful. The
 program continued substantially unchanged for more than two years after that.
 
-The reckoning, when it came, landed on the Commonwealth: a class action settled
-in 2021 refunded some 470,000 unlawfully raised debts to roughly 373,000
-people and paid $112 million in compensation; a second settlement, approved in
-2026, added a further $475 million. Two errors, one arithmetic. The first
-direction cost individual recipients immediately, personally, and for years.
-The second direction cost the Commonwealth eventually, collectively, and only
-once the scheme had already been run for the best part of a decade.
+The reckoning, when it came, landed on the Commonwealth, and it arrived in
+distinct pieces that are worth keeping apart:
+
+- **May 2020.** The Commonwealth conceded that debts raised solely by income
+  averaging had not been validly raised, and moved to zero those debts and
+  refund what had already been repaid. This was a government decision, not a
+  court order or a settlement.
+- **11 June 2021.** The Federal Court approved a settlement in the class
+  action *Prygodicz v Commonwealth (No 2)* — **$112 million**, calculated in
+  the nature of interest, alongside a declaration that debts based solely on
+  income averaging were invalid. Compensation, not refunds: the refunds had
+  already happened.
+- **23 June 2026.** The Court approved a further settlement on appeal,
+  covering heads of loss the first settlement had not, and additional to both
+  the 2021 amount and the debts already zeroed and refunded. Read its parts
+  rather than its headline. A package of **up to $548.5 million** was
+  approved, and it is three different things: **$475 million** in
+  compensation for eligible group members who registered, $13.5 million for
+  the applicants' reasonable legal costs, and an amount *up to* $60 million
+  for administering the scheme. Only the first of those is money paid to
+  group members, and because the third is a ceiling rather than a fixed sum,
+  so is the headline: up to $548.5 million is what was approved, not what
+  will necessarily be spent. Quoting any of these figures as any of the
+  others is the week 1 problem wearing a larger number.
+
+Note what that sequence does with time. The first direction of error cost
+individual recipients immediately, personally, and for years. The second cost
+the Commonwealth eventually, collectively, and only after the scheme had run
+its course and been picked apart in public.
 
 Being uncertain about a number and deciding who absorbs that uncertainty once
 it is used are two different questions. This case answers the second one for

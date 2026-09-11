@@ -1,7 +1,7 @@
 ---
 title: Measured well, about something else
 description:
-  Week 5 — why most evidence is borrowed, the three ways a proxy fails, and why
+  Why most evidence is borrowed, the three ways a proxy fails, and why
   a proxy relationship can decay without anybody noticing
 week: 5
 date: 2027-03-22

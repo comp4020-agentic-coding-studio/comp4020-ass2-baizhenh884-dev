@@ -1,7 +1,7 @@
 ---
 title: A number is a chain, not a guess
 description:
-  Week 2 — why breaking a quantity into parts beats guessing it whole, and why
+  Why breaking a quantity into parts beats guessing it whole, and why
   defining the target is part of the estimate rather than a preliminary to it
 week: 2
 date: 2027-03-01

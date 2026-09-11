@@ -10,7 +10,7 @@ tags:
   - defensibility
 spec:
   - your pressure log records every request, the move you made, and the reason for it
-  - you can distinguish a revision justified by new information from one justified by who asked
+  - you can distinguish a revision justified by new evidence or exposed reasoning from one justified by who asked
   - you can point to an asymmetry in a real appraisal and say which way it pushed the answer
 links:
   - label: Infrastructure Australia — Business Case Evaluation Summary, Great Western Highway (Katoomba to Lithgow) Upgrade, East and West sections
@@ -19,8 +19,10 @@ links:
     url: https://www.infrastructureaustralia.gov.au/sites/default/files/2021-07/Assessment%20Framework%202021%20Guide%20to%20economic%20appraisal.pdf
 ---
 
-Nothing is invented today. The project is real, the numbers are the proponent's
-own, and the criticisms were written by the agency whose job it is to make them.
+None of the evidence today is invented. The project is real, the numbers are
+the proponent's own, and the criticisms were written by the agency whose job
+it is to make them. The negotiation you run in the second half is a teaching
+simulation built on that record — the case is sourced, the roles are not.
 
 ## The case
 
@@ -85,10 +87,15 @@ And on what happened when the first method gave the wrong answer:
 Study the contingency finding hardest. The doing-nothing case was allowed a
 generous margin for costs that might blow out; the build case was allowed a
 tighter one. Each figure is arguable on its own. Set side by side they push in
-one direction, and the direction is the answer somebody wanted.
+one direction, and it is the direction that favours the project option —
+which is Infrastructure Australia's own characterisation of what the appraisal
+does.
 
-That is what motivated reasoning looks like in a real document. Not a
-fabrication — an asymmetry.
+That is the thing to learn to see, and note carefully what it is not. Nothing
+here establishes that any individual set out to reach a chosen answer, and you
+should not claim it does. What the evaluation documents is a pattern of
+assumptions that lean the same way — an asymmetry consistent with optimism
+bias, not a fabrication, and not a proven intention.
 
 ## Run it
 
@@ -106,11 +113,15 @@ the wider economic benefits, and the choice of appraisal method itself.
 Everybody else answers each request with exactly one of three moves, and the
 group writes it down:
 
-- **Accept** — and record what new information about the world justified it.
-- **Reject** — and record why the reason offered was about the proponent rather
-  than about the world.
-- **Widen** — concede that you are less sure than your number implied, without
-  moving the number itself.
+- **Accept** — the request brought new evidence, or exposed a flaw in your
+  reasoning, that materially changes the assumption. Record which of the two
+  it was.
+- **Reject** — the request supplied no evidence and no reasoning that changes
+  the assumption. Record what was missing. Wanting a different answer is not
+  a reason, and neither is asking twice.
+- **Widen** — the request revealed more uncertainty than your number implied,
+  without justifying a move in either direction. Widen the range, leave the
+  centre where it is.
 
 Keep the log as you go. Do not tidy it afterwards.
 
@@ -118,15 +129,15 @@ Keep the log as you go. Do not tidy it afterwards.
 
 Stop the negotiation with ten minutes left and read your own log back.
 
-For every **accept**, find the new information. If the honest entry in that
-column is "they pushed twice", mark it. Nobody is graded on how few of those
-they have; the skill being trained is seeing them at all, and they are far
-easier to see in a log than in the moment.
+For every **accept**, name the evidence or the reasoning flaw that justified
+it. If the honest entry in that column is "they pushed twice", mark it. Nobody
+is graded on how few of those they have; the skill being trained is seeing
+them at all, and they are far easier to see in a log than in the moment.
 
 Then compare what your group did with what the real business case did. Between
 0.57 and 0.68 sits a decision to count additional categories of benefit — a
-legitimate analytical choice, made by people who knew which direction it would
-move the answer, and it still did not get them to one.
+legitimate analytical choice, and one that could only move the ratio upward,
+and it still did not get them to one.
 
 Finally, look at what Infrastructure Australia recommends to the whole sector.
 Its appraisal guidance says optimism bias "refers to the underestimation of the

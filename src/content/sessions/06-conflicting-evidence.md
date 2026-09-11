@@ -85,9 +85,21 @@ material that supports you.
   instant, against a count of who passed through a service across twelve
   months. These are different kinds of quantity before you even get to the
   subject matter.
-- **Unit.** Persons in one case, clients in the other — and a person can become
-  a client more than once, in more than one place. The AIHW notes that people
-  may access services in more than one state or territory.
+- **Unit.** Persons in one case, clients in the other, and the client count is
+  not a count of visits. A client may have many support periods across the
+  year and across different agencies, and the collection is designed to join
+  them into one client rather than count each separately — *"Matching of data
+  from individual clients who presented at different agencies and/or at
+  different times requires a valid statistical linkage key (SLK)"*. Designed
+  to, and largely does: 99% of support periods carried a valid SLK in 2024–25,
+  which is how you know this is linkage that works well rather than a
+  guarantee about every record. The report adds its own caveat when it breaks
+  the count down, *"noting that clients may have accessed services in more
+  than one state or territory throughout the year"*, which is why the
+  jurisdictions do not sum to the national figure. The unit is a client
+  observed
+  through service engagement across a year, not a person occupying a defined
+  housing situation on one night.
 
 Some of these you can settle from the documents. Others you will have to reason
 to. Keep the two apart on the page: **what the publication states** in one
@@ -123,8 +135,8 @@ and 133,000 are two measurements, so their mean is a number about nothing.
 ## Pick one, for something
 
 Three people need a figure by the end of the day. In your pair, decide which
-source each should use, and — the part that gets marked — write the sentence
-each of them must not say.
+source each should use, and — the part you have to justify, and the part we
+will press hardest on — write the sentence each of them must not say.
 
 1. A community organisation writing a funding submission for more crisis
    accommodation beds in one city.

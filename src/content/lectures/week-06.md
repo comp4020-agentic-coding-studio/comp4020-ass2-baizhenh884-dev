@@ -1,7 +1,7 @@
 ---
 title: Disagreement is information
 description:
-  Week 6 — why splitting the difference destroys evidence, the small set of axes
+  Why splitting the difference destroys evidence, the small set of axes
   real disagreements sit on, and why nobody warns you at the moment you need it
 week: 6
 date: 2027-03-29

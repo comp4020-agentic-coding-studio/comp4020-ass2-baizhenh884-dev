@@ -55,10 +55,11 @@ together:
   *"captures the range of rainfall scenarios that are most likely to occur, and
   the confidence in that forecast."*
 
-Spend the first part of the session with a real forecast open, working out which
-number is which and what each one is actually claiming. You will find at least
-one person in the room who has been reading the percentage as the chance of the
-amounts. Most people have.
+Spend the first part of the session with a real forecast open, working out
+which number is which and what each one is actually claiming. Ask around the
+room how people had been reading the percentage before today, and whether
+anyone had been taking it for the chance of the amounts rather than the chance
+of at least 0.2 mm.
 
 ## Translate three of your own
 
@@ -114,7 +115,9 @@ A range with a stated confidence records how firmly you held it; a bare number
 does not. That is what makes today's sheet worth keeping rather than throwing
 out, and the lecture takes the argument further.
 
-BOM keeps its own version of this sheet, and publishes what it shows:
+BOM does the institutional version of this, at a scale no individual sheet
+reaches: it checks its stated probabilities against outcomes across very large
+numbers of forecasts, and publishes what that shows.
 
 > "when we say there is a 50% chance of getting at least, say, 10mm of rain,
 > that is what should happen 50% of the time. National figures showed that:

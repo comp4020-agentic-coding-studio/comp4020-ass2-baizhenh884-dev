@@ -58,10 +58,13 @@ answers something comparable before it answers anything unique to your chain.
 After that, the panel chair and your fellow panellists follow up on whatever
 in your disclosure they actually want to press.
 
-To each challenge you have exactly three moves, and you already own all
-three from week 7: accept it and say what new information justified the
-change; reject it and say why the challenge was about you rather than about
-the world; or widen your stated range without moving its centre. What is new
+To each challenge you have exactly three moves, and you already own all three
+from week 7: **accept** it, naming the new evidence or the flaw in your own
+reasoning that materially changes the assumption; **reject** it, saying what
+the challenge failed to supply — no evidence, and no reasoning that changes
+anything; or **widen** your stated range without moving its centre, because
+the challenge revealed more uncertainty than your number implied without
+justifying a move in either direction. What is new
 today is not the vocabulary. It is that the challenge is live, aimed at an
 assumption someone else chose, and you cannot revise your paper before
 answering it.

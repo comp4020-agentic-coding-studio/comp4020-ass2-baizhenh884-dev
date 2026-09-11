@@ -11,7 +11,7 @@ tags:
 spec:
   - you can say how precise an answer a decision needs before you calculate anything
   - you can name at least one assumption sitting underneath a published figure
-  - you have committed a range to paper and then checked it against a published one
+  - you have committed a range to paper before looking, and can say why published coverage evidence is not that range's error bar
 links:
   - label: ABS Population Clock and population pyramid
     url: https://www.abs.gov.au/statistics/people/population/population-clock-pyramid
@@ -72,9 +72,13 @@ different things, and the ABS cautions that undercount adjustment factors
 Resident Population". It is evidence about something more general: counting a
 population has coverage uncertainty, even when it is done extremely well.
 
-Most people's ranges from move 1 will have been far too wide. Notice that. The
-reflex that official numbers must be badly wrong is as lazy as the reflex that
-they are exact.
+Now look back at the range you committed in move 1, without adjusting it, and
+say out loud what you were reasoning from when you wrote it. Compare its width
+with the scale of the coverage effects above — not as a score, because these
+figures cannot tell you how wide a range around the clock should have been.
+The question is only what your width says about what you assumed. The reflex
+that official numbers must be badly wrong is as lazy as the reflex that they
+are exact.
 
 **4 --- The same evidence, looked at again.** In that same survey, net
 undercount for Aboriginal and Torres Strait Islander people was 17.4% --- a PES

@@ -65,10 +65,12 @@ B. Two aggregates, two spreads, computed in front of everyone.
 Then look at the shape of each round, not just its accuracy:
 
 - **Where did each aggregate land** relative to the truth?
-- **How wide was each round's spread?** Round B is normally the tighter of the
-  two. Note that before drawing any comfort from it.
-- **Which direction were Round B's misses?** Not scattered, in all likelihood.
-  All to one side.
+- **How wide was each round's spread?** Which round was tighter? Whatever the
+  answer, do not draw comfort from a tight spread until you know why it is
+  tight.
+- **Which direction were Round B's misses?** Scattered on both sides of the
+  truth, or bunched to one side? Count them before anyone offers an
+  explanation.
 
 ## What went wrong in Round B, and what did not
 
@@ -83,20 +85,23 @@ thousand passengers that month and around half a million four years later — a
 factor of roughly forty. Anybody who took the reference seriously and scaled it
 by a plausible-sounding recovery multiple landed far short.
 
-Some of you will have spotted the problem and adjusted. Ask, by show of hands,
-how many did — and then look at where those estimates landed. Adjusting from a
-bad base usually still leaves you low, because the base sets the scale you are
-adjusting from.
+Ask, by show of hands, how many spotted the problem and adjusted — and then
+look at where those estimates landed against the ones that did not. Adjusting
+from a low base can still leave you low, because the base sets the scale you
+are adjusting from; whether it did so here is something your own slips can
+answer.
 
-That is the mechanism worth taking away. **Round B's estimates were not less
-careful than Round A's.** Everyone reasoned independently, honestly, and mostly
-competently. They shared one input, and the error in that input passed straight
-through every chain into every answer. Averaging removed the parts of the error
-that differed between you. It could not touch the part you all had in common,
-and nothing about having more people in the room would have helped.
+That is the mechanism to test against what you just measured. Nothing about
+Round B asked for less care than Round A. If its estimates came in bunched and
+low anyway, the explanation is not effort: everyone reasoned separately from
+one shared input, and an error in a shared input passes straight through every
+chain into every answer. Averaging removes the parts of an error that differ
+between people. It cannot touch the part they all hold in common, and adding
+more people to the room does not help.
 
-Meanwhile the tight spread said *agreement*, and agreement reads as confidence.
-The room was most united at the moment it was most wrong.
+So check the two readings against each other. If the tighter spread was also
+the one further from the truth, then agreement — which reads as confidence —
+was at its highest exactly where the room was most wrong.
 
 ## The same shape, at national scale
 
@@ -139,8 +144,11 @@ Separate companies. Separate samples. Separate methods. One difficulty they all
 had, which pushed all of them the same way — and, because the results agreed,
 looked from outside like several independent confirmations of the same finding.
 
-Read that against your Round B slips. The scale is different and the structure
-is identical.
+Read that against your Round B slips. The mechanisms are not the same — you
+were all handed one number, while the pollsters had separate samples and a
+shared difficulty in reaching them — but the failure mode is: error common to
+every estimate survives aggregation, so agreement between them is not
+independent confirmation.
 
 ## Twenty minutes on your own work
 

@@ -18,7 +18,7 @@ marking:
 spec:
   - the estimate is decomposed into a chain, with an assumption ledger ranked by consequence
   - the range and confidence are stated in plain language, and the proxy-to-target bridge names its breaking condition
-  - the pre-hearing disclosure states every material assumption the opinion rests on, and the post-Court revision applies the did-the-world-change-or-the-room test
+  - the pre-hearing disclosure states every material assumption the opinion rests on, and the post-Court revision distinguishes what changed in the evidence or the reasoning from what changed only in the room
 links:
   - label: State Revenue Office (Victoria) — Vacant residential land tax
     url: https://www.sro.vic.gov.au/vacant-residential-land-tax
@@ -132,7 +132,7 @@ aimed at something specific rather than at a guess.
 Week 11 is not a rehearsal. It is where the estimate above is examined live,
 in front of the room.
 
-You sit in a panel with everyone who took the same brief. Your written
+You sit in a panel with other students who took the same brief. Your written
 estimate and disclosure sit in front of you — there is no requirement to work
 from memory. Every panel answers at least one question drawn from a common
 pool, so every hearing is measured against something comparable, and then
@@ -140,6 +140,10 @@ faces live follow-up from the panel chair and from the other panellists.
 
 In response to any challenge you may accept it, reject it, or widen your
 range — the same three moves Week 7 trained, live instead of on paper.
+**Accept** where the challenge brings new evidence, or exposes a flaw in your
+reasoning, that materially changes the assumption. **Reject** where it
+supplies neither. **Widen** where it reveals more uncertainty than your number
+implied without justifying a move in either direction.
 
 **An assumption that does not survive being questioned is not, by itself, a
 mark against you.** A precise, well-justified concession is frequently
@@ -149,9 +153,13 @@ whether your original figure emerged untouched.
 
 ## After the Court
 
-A short revision note, applying the test Week 7 named: did something about
-the world change, or only something about the room? State which challenges
-moved your estimate and why, and which you held and why.
+A short revision note, applying the test Week 7 named: did something change,
+or only the room? Something changing covers all three of new evidence, a flaw
+in your reasoning that the question exposed, and uncertainty you had not
+recognised — a challenge can be decisive without a single external fact being
+new. Only the room changing means pressure, repetition, or the seniority of
+whoever asked. State which challenges moved your estimate and why, and which
+you held and why.
 
 **Declining to revise, where you can justify it, is a complete answer.** This
 note is not marked on how much you changed — it is marked on whether your
@@ -170,4 +178,4 @@ close to any particular number.
 A defensible concession is worth as much as a defensible hold.
 
 **Post-Court revision (20%).** Whether your account of what changed, and why,
-actually applies the world-or-the-room test.
+actually separates evidence and reasoning from pressure.

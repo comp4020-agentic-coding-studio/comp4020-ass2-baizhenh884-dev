@@ -1,7 +1,7 @@
 ---
 title: The assumption you didn’t notice you made
 description:
-  Week 3 — why an estimate’s fragility concentrates in a few inputs, why people
+  Why an estimate’s fragility concentrates in a few inputs, why people
   audit the wrong ones, and why hindsight makes this look easier than it was
 week: 3
 date: 2027-03-08
@@ -38,8 +38,10 @@ consequence before likelihood**, and expect the two orderings to be almost
 unrelated.
 
 An assumption you are ninety-nine per cent sure of can be the one carrying the
-whole answer, in which case that remaining one per cent is the only risk in the
-estimate worth your attention. An assumption you would put at even odds can move
+whole answer, in which case that remaining one per cent carries more of the
+estimate's exposure than everything else put together --- not because
+likelihood stopped counting, but because it is being weighed against how far
+the answer moves. An assumption you would put at even odds can move
 the result by two per cent, in which case debating it is a way of feeling
 rigorous without being rigorous. Comfort is not a measure of importance, and an
 audit that follows discomfort will reliably miss the load-bearing input --- often
@@ -57,8 +59,8 @@ and the case reads as a story about carelessness. That reading is comfortable
 and mostly useless.
 
 It is worth separating two things that hindsight welds together: assumptions
-that were **knowable** at the time and simply not checked, and assumptions that
-were **not knowable** --- open questions nobody had answered yet. The first is a
+that were **checkable** at the time and simply not checked, and assumptions
+that were **unresolved** --- open questions nobody had answered yet. The first is a
 lesson you can act on. The second is a fact about working at the edge of what is
 known, which is where interesting estimates live.
 
@@ -83,6 +85,6 @@ it was standing on.
 - your circled link, and why it's probably the wrong one
 - fragility concentrates
 - consequence versus likelihood
-- knowable and not knowable
+- checkable and unresolved
 - why we're not computing an overrun
 - next week: how to say what you know

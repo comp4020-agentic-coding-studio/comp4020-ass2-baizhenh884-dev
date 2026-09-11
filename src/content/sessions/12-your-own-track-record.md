@@ -10,8 +10,8 @@ tags:
   - reflection
 spec:
   - your calibration audit is a plain count of resolved entries against stated confidence, with no formula behind it
-  - your pattern claim cites at least four dated entries, and your counter-case genuinely engages an entry that does not fit it
-  - your peer note names either a pattern the author missed or one entry that genuinely challenges their claim, not agreement with it
+  - your pattern claim cites at least four dated entries, and your counter-case engages whatever in the record complicates it
+  - your peer note comes from a real search for counterevidence, and names a missed pattern, a genuinely non-fitting entry, or the claim's limits and what would threaten it
 links:
   - label: Bureau of Meteorology — Understanding forecast accuracy and verification
     url: https://www.bom.gov.au/news-and-media/understanding-forecast-accuracy-and-verification
@@ -40,10 +40,12 @@ makes it worth resolving first, while that discipline is freshest in mind.
 
 Retrieve every other entry — the one from week 4, the two copied out of
 week 8's slips, and the eleven you built on your own initiative — and mark
-each resolved one hit or miss. No formula does this for you. You are doing
-by hand exactly what the Bureau does to its own forecasts when it checks
-whether a stated 75% happened about 75% of the time: a plain count, entry by
-entry, against the confidence you actually wrote down at the time.
+each resolved one hit or miss. No formula does this for you. You are doing by
+hand a small-scale version of what the Bureau does to its own forecasts when
+it checks whether a stated 75% happened about 75% of the time: the same
+verification idea — outcomes counted against the confidence stated in
+advance — on fifteen heterogeneous entries rather than on thousands of
+comparable ones. The idea carries. The statistical weight does not.
 
 Lay the count out where you can see the whole thing at once — a table, a
 grid, whatever makes the misses visible rather than buried in prose. You are
@@ -75,11 +77,16 @@ survive.
 ## Trade diaries
 
 Swap with a partner. Read their pattern claim and their entries independently
-of what they told you their pattern was, then write one note back: either a
-pattern in their record that their own claim missed, or one specific entry
-that genuinely does not fit what they argued. Agreement is not a valid note —
-if their claim looks airtight to you, that means you have not looked hard
-enough at their exceptions yet, not that there aren't any.
+of what they told you their pattern was, then go looking for what would
+undermine it. That search is the work, and it is not optional.
+
+Write one note back. Best case, it names a pattern in their record their own
+claim missed, or one specific entry that genuinely does not fit what they
+argued. If you have searched properly and the claim holds, say so and then do
+the harder thing: name the limits of what it actually covers, or name the
+evidence that would most seriously threaten it if it turned up. What is not a
+note is bare agreement — "this looks right" tells the author nothing they can
+use.
 
 ## One change, stated so it can be checked
 
@@ -92,8 +99,10 @@ plainly whether you kept it.
 ## What today is not testing
 
 Nobody's diary is judged on how often it was right. A diary with no misses in
-it is not a strong diary; it is one whose confidences were probably never
-honest in the first place. What is being read is whether your record was
+it is not, by that fact, a strong diary — nor a dishonest one. It is a diary
+whose ranges have not been tested, and the thing to ask of it is whether
+those ranges were informative enough to have been at risk, or wide enough to
+catch almost anything. What is being read is whether your record was
 genuinely kept — precommitted, dated, not touched up afterward — and whether
 your account of it is honest about the entries that complicate your story as
 much as the ones that support it. That is the same discipline this course

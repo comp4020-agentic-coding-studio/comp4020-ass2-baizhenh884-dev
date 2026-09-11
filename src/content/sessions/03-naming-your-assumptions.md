@@ -11,7 +11,7 @@ tags:
 spec:
   - your ledger separates what the sources say from what you are inferring
   - you can rank assumptions by consequence, not by likelihood, and say why the two differ
-  - you can name one assumption that was load-bearing but not knowable at the time
+  - you can name one assumption that was load-bearing, and say whether it was checkable at the time or still unresolved
 links:
   - label: Sydney Opera House — Construction begins (official history)
     url: https://www.sydneyoperahouse.com/our-story/construction-begins
@@ -75,12 +75,15 @@ Then rank them --- and rank them by the right thing.
 **Rank by how far the answer moves if this assumption is wrong, not by how
 likely you think it is to be wrong.**
 
-Those are different orderings and the difference is the point of the week. An
-assumption can be very nearly certain and still be the one carrying the whole
-answer, so that the small chance it is wrong is the only risk that matters. An
-assumption can be a coin flip and barely shift the result, in which case
-arguing about it is entertainment. **Most consequential if wrong is not most
-likely to be wrong.** People audit the second and get surprised by the first.
+Those are different orderings and the difference is the point of the week.
+Likelihood and consequence are two separate axes, and a full account of risk
+needs both; what this exercise deliberately ranks is the second, because it is
+the one people leave out. An assumption can be very nearly certain and still
+be the one carrying the whole answer, so that its small chance of being wrong
+still dominates what is at stake. An assumption can be a coin flip and barely
+shift the result, in which case arguing about it is entertainment. **Most
+consequential if wrong is not most likely to be wrong.** People audit the
+second and get surprised by the first.
 
 For each entry, keep two columns apart:
 
@@ -96,25 +99,29 @@ looking at the wrong assumption entirely?
 
 Sort your ledger one more time, into two piles:
 
-**Knowable in 1957.** Whether the site had been surveyed is a fact about 1957,
+**Checkable in 1957.** Whether the site had been surveyed is a fact about 1957,
 available to anyone who asked. An estimate resting on an unsurveyed site was
-resting on something that could have been checked.
+resting on something that could have been checked with the evidence of the
+day, or obtained by commissioning it.
 
-**Not knowable in 1957.** Whether a roof of that shape could be built at all,
-and what it would weigh, was not a fact anyone was withholding. It was open
-engineering.
+**Unresolved in 1957.** What a roof of that shape would weigh was not a fact
+anyone was withholding; on the sources above, the load "was unknown" and
+critical design elements "had not been settled". That is a different situation
+from an unasked question — it depended on design and investigation work that
+had not yet been done.
 
 The distinction matters because hindsight flattens it. From here, every
 load-bearing assumption that failed looks like negligence, and that reading is
-both unfair and useless --- unfair to people who could not have known, useless
+both unfair and useless --- unfair to people working on questions nobody had
+answered yet, useless
 because it teaches you nothing about your own estimate, whose load-bearing
 assumptions are invisible to you right now for exactly the same reasons.
 
 ## Leaving
 
 One line each, out loud: name an assumption in **your own** week 2 chain that
-you now think was load-bearing, and say whether you could have known it at the
-time.
+you now think was load-bearing, and say whether you could have checked it at
+the time or whether it was genuinely still open.
 
 Nothing is due. Next week we stop asking how wrong a number could be and start
 asking how to say so.

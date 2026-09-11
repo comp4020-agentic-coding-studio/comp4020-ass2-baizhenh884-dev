@@ -1,7 +1,7 @@
 ---
 title: One miss tells you nothing. Fifteen might.
 description:
-  Week 12 — why no single estimate can reveal whether you are a good
+  Why no single estimate can reveal whether you are a good
   estimator, and what an accumulated, precommitted record can show instead
 week: 12
 date: 2027-05-24

@@ -1,7 +1,7 @@
 ---
 title: A range says more than a number
 description:
-  Week 4 — what a point estimate hides, why a national agency publishes its
+  What a point estimate hides, why a national agency publishes its
   uncertainty on purpose, and how to choose a width honestly
 week: 4
 date: 2027-03-15

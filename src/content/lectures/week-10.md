@@ -1,7 +1,7 @@
 ---
 title: The one thing forecasting adds
 description:
-  Week 10 — why a claim about the future needs no new machinery beyond what
+  Why a claim about the future needs no new machinery beyond what
   you already have, and the one structural difference that changes everything
 week: 10
 date: 2027-05-10

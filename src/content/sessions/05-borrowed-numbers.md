@@ -56,13 +56,17 @@ Something like:
 1. Operational demand measures electricity supplied through the grid by
    generators of a certain size and type.
 2. Total consumption is that, plus everything supplied some other way.
-3. In 2005, "everything supplied some other way" was small enough to ignore for
-   most purposes.
+3. *Assumed:* in 2005, "everything supplied some other way" was small enough to
+   ignore for most purposes.
 4. Therefore, in 2005, operational demand was close to total consumption.
 
 Four claims, and only the fourth is the one you wanted. Notice what step three
 is doing: it is holding the whole bridge up, it is about the state of the world
-rather than about the data, and nobody publishes it anywhere.
+rather than about the data, and nobody publishes it anywhere. Nothing above
+establishes it — it is marked as an assumption because that is what it is, and
+the useful question is the one you would have to answer to earn it. What
+evidence would justify step three? Name the quantity you would need, and who
+would have to have measured it.
 
 Now change the year to 2025 and read step three again.
 
@@ -123,10 +127,13 @@ first?**
 
 That second half matters more than the first. Every proxy in the list above is
 fine under some conditions and useless under others, and the failure does not
-announce itself. Screen time survived until people started reading on two
-devices. Downloads survived until the thing doing the downloading stopped being
-a person. In each case the number kept publishing, on schedule, looking exactly
-as it had the year before.
+announce itself. Screen time stops standing in for attention as soon as one
+person's attention is split across two devices, or one device is left running
+at nobody. Downloads stop standing in for readers as soon as a meaningful
+share of the downloading is not being done by a person. Neither of those is a
+history lesson; each is a condition you could check, and the point is that
+under it the number would keep publishing, on schedule, looking exactly as it
+had the year before.
 
 ## Taking it away
 

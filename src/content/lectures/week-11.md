@@ -1,7 +1,7 @@
 ---
 title: What prose cannot force you to say
 description:
-  Week 11 — why a written justification can hide exactly the weakness a live
+  Why a written justification can hide exactly the weakness a live
   question exposes in seconds, and what the Court is actually testing for
 week: 11
 date: 2027-05-17

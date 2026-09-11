@@ -10,7 +10,7 @@ tags:
   - definitions
 spec:
   - every link in your chain is written down as a number with a reason beside it
-  - someone else has checked your units and found them consistent
+  - someone else has audited your units, and whatever they found is marked or repaired on the page
   - you can say what your number was a number of, precisely enough to disagree with
 links:
   - label: ACT Government Open Data — Bus_Stops_July_2017
@@ -51,8 +51,11 @@ gives stops. Stops-per-route times suburbs gives nothing at all --- and a chain
 that quietly produces "stops per suburb per route" has a bug in it that no
 amount of better guessing will fix.
 
-This is the cheapest correctness check in the course and almost nobody runs it
-unprompted.
+This is the cheapest structural check in the course and almost nobody runs it
+unprompted. It is also only a necessary condition, not a sufficient one:
+stops-per-route times routes is dimensionally impeccable and still counts a
+stop served by four routes four times. Units passing tells you the chain is
+not nonsense. It does not tell you the chain is right.
 
 **Pass three --- mark the weak link.** Circle the one number in your own chain
 you would least like to defend if someone pushed. Don't fix it. Just mark it.

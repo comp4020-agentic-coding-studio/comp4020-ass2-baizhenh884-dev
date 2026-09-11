@@ -24,7 +24,7 @@ marking:
 spec:
   - the diary holds at least 15 entries, at least 12 resolved, each recorded before its answer was known
   - the pattern claim is supported by specific, dated entries rather than by impression
-  - the counter-case genuinely engages entries that do not fit the claimed pattern, and the forward commitment is checkable
+  - the counter-case engages whatever in the record complicates the claimed pattern, and the forward commitment is checkable
 related:
   - sessions/04-a-number-with-a-shape
   - sessions/10-a-number-about-tomorrow
@@ -33,8 +33,8 @@ related:
 
 This is not a record of how often you were right. It is a record of how firmly
 you held each range, kept in a form you can check later — because a single hit
-or miss tells you nothing, and a hundred of them, looked at together, tell you
-something real about yourself.
+or miss tells you little, and fifteen, read together, may reveal a pattern
+that no one of them could.
 
 ## What starts it
 
@@ -80,11 +80,14 @@ be written down by then.
 ## What Week 12 adds
 
 Week 12 is the working session in which you retrieve every entry, mark each
-one hit or miss by plain counting — no formula, the same way the Bureau of
-Meteorology checks its own stated confidences against what actually fell — and
-look for a pattern in your misses. A peer reads your diary and writes one
-note: a pattern you missed in your own record, or one entry that genuinely
-does not fit the pattern you claim. That note is part of what you submit.
+one hit or miss by plain counting — no formula, borrowing at small scale the
+verification idea the Bureau of Meteorology applies to its own stated
+confidences across very large numbers of forecasts — and look for a pattern in
+your misses. A peer reads your diary, searches it for what would undermine the
+pattern you claim, and writes one note: a pattern you missed in your own
+record, an entry that genuinely does not fit, or — where the claim survives a
+real search — the limits of what it covers and the evidence that would most
+threaten it. That note is part of what you submit.
 
 ## What you submit
 
@@ -114,8 +117,10 @@ leaving them out.
 ## What is not marked
 
 **How often you were right.** A well-calibrated 75% confidence should miss
-about a quarter of the time — a diary with no misses in it is not a strong
-diary, it is a suspiciously wide one. There is no Brier score, no
+about a quarter of the time, so a perfect hit record is not itself evidence of
+good calibration. Markers will look at whether your ranges were informative
+and honestly precommitted, or simply wide enough to catch almost anything;
+neither answer is settled by the hit count alone. There is no Brier score, no
 calibration curve and no statistical formula anywhere in this brief. The
 audit is a count you can do by hand, and everything that follows it is
 written reflection, not computation.
