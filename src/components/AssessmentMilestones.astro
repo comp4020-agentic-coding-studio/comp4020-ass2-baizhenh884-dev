@@ -1,0 +1,215 @@
+---
+import { getPublishedCollection } from "astro-course-university/content";
+import { withBase } from "astro-theme-university/url";
+
+/*
+ * The weeks that put something into one of the two assessments.
+ *
+ * This is not a timeline of the semester --- the Sessions page already has
+ * one, week by week. It is the shorter list of weeks whose room produces a
+ * named artefact that later turns up inside a submission, plus the one week
+ * that is marked as it happens. Weeks that only train method are covered in a
+ * sentence on the index rather than given a row each, because a row implies
+ * something to hand over and those weeks have nothing.
+ *
+ * `produces` is authored; every title, link and share is looked up, and a
+ * lookup that fails throws rather than rendering a gap. A milestone naming a
+ * week, an assessment or a marking criterion that no longer exists is a real
+ * inconsistency between this summary and the content, and the build is the
+ * right place to hear about it.
+ */
+type Status =
+  /** The week's output is submitted inside the assessment and marked there. */
+  | { kind: "carried" }
+  /** The week is itself examined, under the named marking criterion. */
+  | { kind: "assessed"; criterion: string };
+
+interface Milestone {
+  week: number;
+  feeds: string[];
+  produces: string;
+  status: Status;
+}
+
+const milestones: Milestone[] = [
+  {
+    week: 4,
+    feeds: ["calibration-diary"],
+    produces:
+      "The form every later entry uses — low bound, high bound, confidence in plain words, and a line naming what would make the range miss — and the first range committed before looking, as one supplied Diary entry.",
+    status: { kind: "carried" },
+  },
+  {
+    week: 8,
+    feeds: ["calibration-diary", "client-estimate-court"],
+    produces:
+      "Two round estimates, copied into the Diary as full entries before the slips are handed in, and the shared input your own estimate turns out to rest on — which the written estimate has to declare.",
+    status: { kind: "carried" },
+  },
+  {
+    week: 9,
+    feeds: ["client-estimate-court"],
+    produces:
+      "The stakes note the brief asks for, written while the case is still specific: who bears the cost if the number is too high, who if it is too low, and whether that is the same party either way.",
+    status: { kind: "carried" },
+  },
+  {
+    week: 10,
+    feeds: ["calibration-diary"],
+    produces:
+      "One forecast about a date that has not arrived, sealed in the room and not opened until Week 12 — the last of the four supplied Diary entries, and the only one nobody can revise.",
+    status: { kind: "carried" },
+  },
+  {
+    week: 11,
+    feeds: ["client-estimate-court"],
+    produces:
+      "The hearing: the written estimate and its disclosure read out and challenged by a panel, answered by accepting, rejecting, or widening.",
+    status: { kind: "assessed", criterion: "Estimate Court" },
+  },
+  {
+    week: 12,
+    feeds: ["calibration-diary"],
+    produces:
+      "The sealed forecast opened and resolved, the plain-count audit, the pattern claim and its counter-case, the forward commitment, and a partner's note on your record.",
+    status: { kind: "carried" },
+  },
+];
+
+const sessions = await getPublishedCollection("sessions");
+const assessments = await getPublishedCollection("assessments");
+
+const sessionByWeek = new Map(sessions.map((entry) => [entry.data.week, entry]));
+const assessmentById = new Map(assessments.map((entry) => [entry.id, entry]));
+
+const resolved = milestones.map((milestone) => {
+  const { week, status } = milestone;
+
+  const session = sessionByWeek.get(week);
+  if (!session) {
+    throw new Error(`assessment milestone: no session in week ${week}`);
+  }
+
+  const fed = milestone.feeds.map((id) => {
+    const assessment = assessmentById.get(id);
+    if (!assessment) {
+      throw new Error(`assessment milestone (week ${week}): no assessment "${id}"`);
+    }
+    return assessment;
+  });
+
+  // The share an examined week is worth is the assessment's own criterion
+  // weight, so it is stated in exactly one place: the assessment frontmatter.
+  let share: number | undefined;
+  if (status.kind === "assessed") {
+    const [assessment] = fed;
+    const marking = assessment?.data.marking;
+    const criterion =
+      marking?.mode === "weighted"
+        ? marking.criteria.find((entry) => entry.name === status.criterion)
+        : undefined;
+    if (!criterion) {
+      throw new Error(
+        `assessment milestone (week ${week}): "${status.criterion}" is not a weighted criterion of ${assessment?.id}`,
+      );
+    }
+    share = criterion.weight;
+  }
+
+  return {
+    week,
+    status,
+    produces: milestone.produces,
+    session: { title: session.data.title, href: withBase(`/sessions/${session.id}/`) },
+    feeds: fed.map((assessment) => ({
+      title: assessment.data.title,
+      href: withBase(`/assessments/${assessment.id}/`),
+    })),
+    share,
+  };
+});
+---
+
+<dl class="milestones">
+  {
+    resolved.map((milestone) => (
+      <div class="milestone">
+        <dt>
+          <span class="week">Week {milestone.week}</span>
+          <a href={milestone.session.href}>{milestone.session.title}</a>
+        </dt>
+        <dd>
+          <p class="produces">{milestone.produces}</p>
+          <p class="status">
+            {milestone.feeds.map((assessment, index) => (
+              <>
+                {index > 0 && " and "}
+                <a href={assessment.href}>{assessment.title}</a>
+              </>
+            ))}
+            {" · "}
+            {milestone.status.kind === "assessed" ? (
+              <span>
+                Marked as it happens — the {milestone.status.criterion} component, {milestone.share}%
+                of that assessment.
+              </span>
+            ) : (
+              <span>
+                Carried into {milestone.feeds.length > 1 ? "both" : "it"} and marked there — not a
+                separate graded item.
+              </span>
+            )}
+          </p>
+        </dd>
+      </div>
+    ))
+  }
+</dl>
+
+<style>
+  .milestones {
+    margin-block: 0;
+  }
+
+  /* One block per week, separated by a rule rather than a card each: six cards
+     would read as six things to do, which is the impression this section
+     exists to correct. */
+  .milestone + .milestone {
+    margin-block-start: var(--at-spacing-md);
+    padding-block-start: var(--at-spacing-md);
+    border-block-start: 1px solid var(--at-divider);
+  }
+
+  .milestone dt {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--at-spacing-xs) var(--at-spacing-sm);
+    align-items: baseline;
+    font-weight: 600;
+  }
+
+  /* The week number is the thing being scanned down the left, so it reads
+     first and the session title follows it as a link. */
+  .week {
+    color: var(--at-text-secondary);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .milestone dd {
+    margin-inline: 0;
+    margin-block: var(--at-spacing-xs) 0;
+  }
+
+  .produces {
+    margin-block: 0;
+  }
+
+  /* Smaller and muted: which assessment this lands in, and whether it carries
+     a mark of its own, are qualifications on the line above rather than
+     claims of their own. */
+  .status {
+    margin-block: var(--at-spacing-xs) 0;
+    color: var(--at-text-muted);
+    font-size: var(--at-font-size-sm);
+  }
+</style>

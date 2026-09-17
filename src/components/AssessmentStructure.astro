@@ -1,0 +1,104 @@
+---
+import { getPublishedCollection } from "astro-course-university/content";
+import { withBase } from "astro-theme-university/url";
+
+/*
+ * What sits inside each assessment, for the index page.
+ *
+ * The index says the course has two graded pieces, which is true and is also
+ * the whole of what it said: a 45% card and a 55% card, with no sign that
+ * either one has stages. The parts below are not new assessment --- they are
+ * the `marking.criteria` already declared in each assessment's frontmatter and
+ * already rendered on its detail page by `MarkingModel`. Reading them from the
+ * same source is the point: a share shown here cannot drift from the share a
+ * marker works to, and adding a component to an assessment shows up here
+ * without anyone remembering to come back and edit this file.
+ *
+ * Only the one-line summary is authored, and it says what kind of parts these
+ * are and over what span --- the thing the criteria names alone do not carry.
+ */
+const summaries: Record<string, string> = {
+  "calibration-diary":
+    "Kept from Week 4 to Week 12: a running record of at least fifteen ranges, each committed before its answer was known, then the end-of-semester audit, the written analysis that reads the whole set, and a peer's note on it.",
+  "client-estimate-court":
+    "One target, shared by the whole cohort and answered in three stages: a written estimate and disclosure submitted before the hearing, the hearing itself in Week 11, and a revision note after it.",
+};
+
+const assessments = (await getPublishedCollection("assessments")).sort(
+  (a, b) => a.data.week - b.data.week,
+);
+---
+
+{
+  assessments.map((assessment) => {
+    const marking = assessment.data.marking;
+    return (
+      <section class="structure">
+        <h3>
+          <a href={withBase(`/assessments/${assessment.id}/`)}>{assessment.data.title}</a>
+          <span class="weight"> — {assessment.data.weight}% of the course</span>
+        </h3>
+        {summaries[assessment.id] && <p>{summaries[assessment.id]}</p>}
+        {marking?.mode === "weighted" && (
+          <dl class="parts">
+            {marking.criteria.map((criterion) => (
+              <div class="part">
+                <dt>{criterion.name}</dt>
+                <dd>{criterion.weight}%</dd>
+              </div>
+            ))}
+          </dl>
+        )}
+      </section>
+    );
+  })
+}
+
+<style>
+  .structure + .structure {
+    margin-block-start: var(--at-spacing-xl);
+  }
+
+  .structure h3 {
+    margin-block-end: var(--at-spacing-sm);
+  }
+
+  /* The course-level weight is the assessment's identity, not a second fact
+     competing with its title, so it sits in the heading at heading weight but
+     without the heading's colour. */
+  .weight {
+    color: var(--at-text-secondary);
+    font-weight: normal;
+  }
+
+  .parts {
+    margin-block: var(--at-spacing-md) 0;
+  }
+
+  /* `1fr auto` rather than a table: a criterion name long enough to wrap does
+     so inside its own column, leaving the share on the baseline of the first
+     line. Nothing here can push the page wider than its content column, which
+     a table of the same two columns would do at narrow widths. */
+  .part {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: var(--at-spacing-md);
+    align-items: baseline;
+    padding-block: var(--at-spacing-xs);
+    border-block-end: 1px solid var(--at-divider);
+  }
+
+  .part:last-child {
+    border-block-end: 0;
+  }
+
+  .part dt {
+    color: var(--at-text-secondary);
+  }
+
+  .part dd {
+    margin: 0;
+    color: var(--at-text-muted);
+    font-variant-numeric: tabular-nums;
+  }
+</style>

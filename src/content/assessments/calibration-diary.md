@@ -27,6 +27,7 @@ spec:
   - the counter-case engages whatever in the record complicates the claimed pattern, and the forward commitment is checkable
 related:
   - sessions/04-a-number-with-a-shape
+  - sessions/08-ask-the-room
   - sessions/10-a-number-about-tomorrow
   - sessions/12-your-own-track-record
 ---
