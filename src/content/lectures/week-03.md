@@ -5,6 +5,7 @@ description:
   audit the wrong ones, and why hindsight makes this look easier than it was
 week: 3
 date: 2027-03-08
+slides: /decks/week-03/
 related:
   - sessions/03-naming-your-assumptions
 ---

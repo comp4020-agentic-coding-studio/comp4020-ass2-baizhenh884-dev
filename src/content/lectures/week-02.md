@@ -5,6 +5,7 @@ description:
   defining the target is part of the estimate rather than a preliminary to it
 week: 2
 date: 2027-03-01
+slides: /decks/week-02/
 related:
   - sessions/02-taking-it-apart
 ---

@@ -1,0 +1,106 @@
+---
+title: A number is a chain, not a guess
+description:
+  Week 2 of Back of the Envelope — why decomposition beats a guess, and why
+  the target has to be defined before it can be counted
+---
+
+{/* _class: impact */}
+
+# A number is a chain, not a guess
+
+Back of the Envelope · Week 2
+
+---
+
+## Challenge a guess and there is nothing to point at
+
+Restate it more confidently, or abandon it.
+
+There is no third move.
+
+```notes
+A guess fuses every judgment its author made into one figure. Two people who
+disagree about a guessed number can only trade intuitions — there is no
+surface to disagree on.
+```
+
+---
+
+## From something you know to something you don't
+
+**Suburbs → routes per suburb → stops per route → bus stops**
+
+Not the only route: kilometres of road and stops per kilometre is another
+chain; buses in the fleet and stops per bus's run is a third.
+
+```notes
+Whichever chain a group picks, every link is a number *and* a reason, written
+where a stranger can read both. The smallest set of links that gets there is
+usually smaller than the first one written — try to delete a link.
+```
+
+---
+
+## Four things a chain gives you
+
+- **Inspectable** — every link is a claim you can examine on its own
+- **Checkable** — each step must produce the unit it claims
+- **Local** — disagreement lands on one link, not the whole guess
+- **Defined** — you cannot decompose a target you have not pinned down
+
+---
+
+## Stops-per-route × suburbs gives nothing at all
+
+Stops-per-route × routes = **stops.**
+
+Stops-per-route × suburbs = **nothing at all.**
+
+Passing units tells you the chain is not nonsense. It does not tell you the
+chain is right — a stop served by four routes still gets counted four times.
+
+---
+
+{/* _class: centered */}
+
+## How many bus stops are there in the ACT network?
+
+Phones away. Build the chain, then count.
+
+---
+
+{/* _if: reveal */}
+{/* _id: bus-stops-resolution */}
+
+## How many bus stops are there in the ACT network?
+
+**2,581 rows · 2,581 distinct `stop_id` · 2,570 distinct `stop_name`**
+
+ACT Government open data, queried directly while this session was prepared.
+
+```notes
+Presenter-only slide (?reveal). Eleven fewer distinct names than rows says
+some names repeat — not how many, or how often.
+```
+
+---
+
+## A July 2017 snapshot of stop records
+
+Not a 2027 count — the most recent open extract; the current list lives
+behind a GTFS access key.
+
+Not a count of physical stops, either — a count of **stop records**. Whether
+a stop served by four routes is one thing or four, the dataset does not say.
+
+---
+
+## An estimate whose target is undefined is not precise enough to be wrong
+
+Two careful people can build different honest chains for the same brief, and
+both be right about their own question.
+
+Next: the assumption you circled, and what it was really carrying.
+
+[← Back to lecture](/lectures/week-02/)
