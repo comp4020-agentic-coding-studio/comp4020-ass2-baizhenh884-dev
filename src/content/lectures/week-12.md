@@ -5,6 +5,7 @@ description:
   estimator, and what an accumulated, precommitted record can show instead
 week: 12
 date: 2027-05-24
+slides: /decks/week-12/
 related:
   - sessions/12-your-own-track-record
 ---

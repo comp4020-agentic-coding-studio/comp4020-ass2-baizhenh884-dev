@@ -5,6 +5,7 @@ description:
   question exposes in seconds, and what the Court is actually testing for
 week: 11
 date: 2027-05-17
+slides: /decks/week-11/
 related:
   - sessions/11-estimate-court
 ---

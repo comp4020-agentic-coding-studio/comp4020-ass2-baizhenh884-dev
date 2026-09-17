@@ -5,6 +5,7 @@ description:
   acted on, and the two questions the rest of the course has kept merged
 week: 9
 date: 2027-05-03
+slides: /decks/week-09/
 related:
   - sessions/09-who-carries-the-cost
 ---

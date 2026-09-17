@@ -5,6 +5,7 @@ description:
   you already have, and the one structural difference that changes everything
 week: 10
 date: 2027-05-10
+slides: /decks/week-10/
 related:
   - sessions/10-a-number-about-tomorrow
 ---
