@@ -46,3 +46,22 @@
     margin-inline-end: var(--at-gutter);
   }
 }
+
+/*
+ * Keyboard-focus ring clipped at the scroll container's edges.
+ *
+ * `.at-nav-links` is `overflow-x: auto` with zero padding, so the first and
+ * last links sit flush against the clip edge. The theme's `:focus-visible`
+ * outline draws 2px + 2px offset outside the link's own box, so tabbing to
+ * the first link clips the ring's inline-start side and tabbing to the last
+ * clips its inline-end side --- the ring is only ever complete on links in
+ * the middle. A little inline padding on the scroll container itself gives
+ * the ring room on both edges without shifting the links or changing the
+ * scroll-driven fade behaviour, since it's inside the scrollport rather than
+ * outside it.
+ */
+@media (width >= 640px) {
+  .at-nav-links {
+    padding-inline: var(--at-spacing-xs);
+  }
+}
