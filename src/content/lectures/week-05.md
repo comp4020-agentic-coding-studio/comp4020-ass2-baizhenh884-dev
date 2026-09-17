@@ -5,6 +5,7 @@ description:
   a proxy relationship can decay without anybody noticing
 week: 5
 date: 2027-03-22
+slides: /decks/week-05/
 related:
   - sessions/05-borrowed-numbers
 ---
